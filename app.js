@@ -54,3 +54,11 @@ getFirstValue = (a) => {
 console.log(getFirstValue([1,2,3]));
 console.log(getFirstValue([80,5,100]));
 console.log(getFirstValue([-500, 0, 50]));
+
+//multiplication
+circuitPower = (a,b) => {
+    return a * b;
+}
+console.log(circuitPower(230, 10));
+console.log(circuitPower(110, 3));
+console.log(circuitPower(480, 20));
