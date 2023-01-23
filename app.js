@@ -30,3 +30,11 @@ triArea = (base, height) => {
 console.log(triArea(3,2));
 console.log(triArea(7,4));
 console.log(triArea(10,10));
+
+// Convert age to days
+calcAge = (days) => {
+    return days *= 365;
+}
+console.log(calcAge(65));
+console.log(calcAge(0));
+console.log(calcAge(20));
