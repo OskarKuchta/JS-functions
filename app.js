@@ -153,3 +153,15 @@ lessThan100 = (a, b) => {
 console.log(lessThan100(22, 15));
 console.log(lessThan100(83, 34));
 console.log(lessThan100(3, 77));
+
+// Array with increment values
+printArray = (a) => {
+    let newArray = [];
+    for (i = 1; i <= a; i++) {
+     newArray.push(i);
+    }
+ return newArray;
+}
+console.log(printArray(3));
+console.log(printArray(6));
+console.log(printArray(5));
