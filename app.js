@@ -111,3 +111,11 @@ squared = (a) => {
 console.log(squared(5));
 console.log(squared(9));
 console.log(squared(100));
+
+// Number less than or equal to zero
+lessThanOrEqualToZero = (a) => {
+ return a <= 0 ? true : false;
+}
+console.log(lessThanOrEqualToZero(5));
+console.log(lessThanOrEqualToZero(0));
+console.log(lessThanOrEqualToZero(-2));
