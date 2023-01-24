@@ -79,4 +79,13 @@ console.log(nextEdge(8, 10));
 console.log(nextEdge(5, 7));
 console.log(nextEdge(9, 2));
 
+// Remainder from two numbers  
+remainder = (x, y) => {
+ return x % y;
+}
+console.log(remainder(1, 3));
+console.log(remainder(6, 4));
+console.log(remainder(45, 5));
+console.log(remainder(-9, 45));
+
 
