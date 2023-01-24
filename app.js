@@ -127,4 +127,13 @@ sumPolygon = (a) => {
 console.log(sumPolygon(2));
 console.log(sumPolygon(4));
 console.log(sumPolygon(6));
+
+// Multiply with two parameters
+points = (a, b) => {
+ return a * 2 + b * 3;
+}
+console.log(points(1, 1));
+console.log(points(7, 5));
+console.log(points(38, 8));
+   
    
