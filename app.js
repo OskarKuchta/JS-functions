@@ -135,5 +135,15 @@ points = (a, b) => {
 console.log(points(1, 1));
 console.log(points(7, 5));
 console.log(points(38, 8));
+
+// Basic Variable Assignment
+nameString = (name) => {
+ const a = 'Edabit"';
+ const result = '"' + name + a;
+ return result;
+}
+console.log(nameString("Mubashir"));
+console.log(nameString("Matt"));
+console.log(nameString("javascript"));
    
    
