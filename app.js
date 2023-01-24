@@ -104,4 +104,10 @@ console.log(giveMeSomething("is better than nothing"));
 console.log(giveMeSomething("Bob Jane"));
 console.log(giveMeSomething("something"));
 
-
+// Squared numbers
+squared = (a) => {
+ return a *= a;
+}
+console.log(squared(5));
+console.log(squared(9));
+console.log(squared(100));
