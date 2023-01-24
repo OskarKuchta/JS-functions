@@ -119,3 +119,12 @@ lessThanOrEqualToZero = (a) => {
 console.log(lessThanOrEqualToZero(5));
 console.log(lessThanOrEqualToZero(0));
 console.log(lessThanOrEqualToZero(-2));
+
+//Summary angle of polygon
+sumPolygon = (a) => {
+ return a > 2 ? (a - 2) * 180 : undefined;
+}
+console.log(sumPolygon(2));
+console.log(sumPolygon(4));
+console.log(sumPolygon(6));
+   
