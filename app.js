@@ -6,7 +6,7 @@ console.log(addition(3, 4));
 console.log(addition(-3, -6));
 console.log(addition(7, 3));
 
-//Convert minutes to seconds 
+// Convert minutes to seconds 
 convert = (a) => {
     return a *= 60;
 }
@@ -39,7 +39,7 @@ console.log(calcAge(65));
 console.log(calcAge(0));
 console.log(calcAge(20));
 
-//Cube
+// Cube
 cubes = (a) => {
     return a * a * a;
 }
@@ -47,7 +47,7 @@ console.log(cubes(3));
 console.log(cubes(5));
 console.log(cubes(10));
 
-//First value in array 
+// First value in array 
 getFirstValue = (a) => {
     return a[0];
 }
@@ -55,10 +55,18 @@ console.log(getFirstValue([1,2,3]));
 console.log(getFirstValue([80,5,100]));
 console.log(getFirstValue([-500, 0, 50]));
 
-//multiplication
+// multiplication
 circuitPower = (a,b) => {
     return a * b;
 }
 console.log(circuitPower(230, 10));
 console.log(circuitPower(110, 3));
 console.log(circuitPower(480, 20));
+
+// How many second in hour   
+howManySeconds = (a) => {
+ return a *= 3600;
+}
+console.log(howManySeconds(2));
+console.log(howManySeconds(10));
+console.log(howManySeconds(24));
