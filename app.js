@@ -88,4 +88,13 @@ console.log(remainder(6, 4));
 console.log(remainder(45, 5));
 console.log(remainder(-9, 45));
 
+// Perimeter of a Rectangle
+findPerimeter = (length, width) => {
+ return (length * 2) + (width * 2);
+}
+console.log(findPerimeter(6, 7));
+console.log(findPerimeter(20, 10));
+console.log(findPerimeter(2, 9));
+   
+
 
