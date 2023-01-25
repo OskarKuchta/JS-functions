@@ -212,5 +212,14 @@ footballPoints = (wins, draw,
  console.log(footballPoints(3, 4, 2));
  console.log(footballPoints(5, 0, 2));
  console.log(footballPoints(0, 0, 1));
+
+ // Convert hours and minutes to seconds
+convert = (hours, minutes) => {
+  return (hours *= 3600) + (minutes *=
+   60);
+ }
+ console.log(convert(1, 3));
+ console.log(convert(2, 0));
+ console.log(convert(0, 0));
  
  
