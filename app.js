@@ -221,5 +221,13 @@ convert = (hours, minutes) => {
  console.log(convert(1, 3));
  console.log(convert(2, 0));
  console.log(convert(0, 0));
+
+ // Number equal to seven  
+isSeven = (x) => {
+  return x === 7 ? true : false;
+ }
+ console.log(isSeven(4));
+ console.log(isSeven(9));
+ console.log(isSeven(7));
  
  
