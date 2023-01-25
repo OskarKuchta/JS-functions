@@ -201,4 +201,16 @@ isSameNum = (a, b) => {
  console.log(isSameNum(2, 2));
  console.log(isSameNum(2, "2"));
  
+ // Football Points  
+footballPoints = (wins, draw,
+  losses) => {
+  let allow = wins && draw && losses <
+   0;
+  return allow == false ? wins * 3 +
+   draw * 1 + losses * 0 : null;
+ }
+ console.log(footballPoints(3, 4, 2));
+ console.log(footballPoints(5, 0, 2));
+ console.log(footballPoints(0, 0, 1));
+ 
  
