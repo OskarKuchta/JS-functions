@@ -182,4 +182,14 @@ animals = (chciken, cows, pigs) => {
  console.log(animals(2, 3, 5));
  console.log(animals(1, 2, 3));
  console.log(animals(5, 2, 8));
+
+ //  && operator  
+and = (a, b) => {
+  return a == true && b == true ?
+   true : false;
+ }
+ console.log(and(true, false));
+ console.log(and(true, true));
+ console.log(and(false, true));
+ console.log(and(false, false));
  
