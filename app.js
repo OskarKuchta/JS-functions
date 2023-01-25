@@ -173,3 +173,13 @@ swap = (a, b) => {
  console.log(swap(100, 200));
  console.log(swap(44, 33));
  console.log(swap(21, 12));
+
+ //Multiply three numbers with different multiplier  
+animals = (chciken, cows, pigs) => {
+  return (chciken * 2) + (cows * 4) +
+   (pigs * 4);
+ }
+ console.log(animals(2, 3, 5));
+ console.log(animals(1, 2, 3));
+ console.log(animals(5, 2, 8));
+ 
