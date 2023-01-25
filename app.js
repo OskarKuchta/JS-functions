@@ -192,4 +192,13 @@ and = (a, b) => {
  console.log(and(true, true));
  console.log(and(false, true));
  console.log(and(false, false));
+
+ // Compare two numbers
+isSameNum = (a, b) => {
+  return a === b ? true : false;
+ }
+ console.log(isSameNum(4, 8));
+ console.log(isSameNum(2, 2));
+ console.log(isSameNum(2, "2"));
+ 
  
