@@ -165,3 +165,11 @@ printArray = (a) => {
 console.log(printArray(3));
 console.log(printArray(6));
 console.log(printArray(5));
+
+// Swap two numbers in array 
+swap = (a, b) => {
+  return [b, a];
+ }
+ console.log(swap(100, 200));
+ console.log(swap(44, 33));
+ console.log(swap(21, 12));
