@@ -230,4 +230,12 @@ isSeven = (x) => {
  console.log(isSeven(9));
  console.log(isSeven(7));
  
- 
+  // Equal parameters typeof
+  checkEquality = (a, b) => {
+    return typeof a === typeof b ? true :
+     false;
+   }
+   console.log(checkEquality(1, true));
+   console.log(checkEquality(1, 1));
+   console.log(checkEquality(0, "0"));
+   
