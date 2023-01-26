@@ -251,3 +251,11 @@ profitableGamble = (prob, prize,
     2));
   console.log(profitableGamble(0.9, 3,
     2));
+
+    // Boolean to String Conversion
+   boolToString = (flag) => {
+    return typeof flag === "boolean" ? 
+    '"' + flag + '"' : null;
+   }
+   console.log(boolToString(true));
+   console.log(boolToString(false));
