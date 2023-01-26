@@ -259,3 +259,12 @@ profitableGamble = (prob, prize,
    }
    console.log(boolToString(true));
    console.log(boolToString(false));
+
+  // Using Arrow Function 
+  arrowFunc = (a) => {
+    return typeof a === "string" ? '"' +
+    a + '"' : a;
+  }
+  console.log(arrowFunc(3));
+  console.log(arrowFunc("3"));
+  console.log(arrowFunc(true));
