@@ -268,3 +268,11 @@ profitableGamble = (prob, prize,
   console.log(arrowFunc(3));
   console.log(arrowFunc("3"));
   console.log(arrowFunc(true));
+  
+  // Parody of a Calculator (not recommended convert string to number)
+  calculator = (a) => {
+    return eval(a);
+  }
+  console.log(calculator("23 + 4"));
+  console.log(calculator("45-15"));
+  console.log(calculator("49/7*2-3"));
