@@ -276,3 +276,13 @@ profitableGamble = (prob, prize,
   console.log(calculator("23 + 4"));
   console.log(calculator("45-15"));
   console.log(calculator("49/7*2-3"));
+
+  // Two Makes Ten  
+  makesTen = (a, b) => {
+    return (a + b) == 10 || a == 10 ||
+     b == 10 ? true : false;
+  }
+  console.log(makesTen(10, 9));
+  console.log(makesTen(9, 9));
+  console.log(makesTen(1, 9));
+   
