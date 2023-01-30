@@ -332,6 +332,15 @@ comp = (a, b) => {
 console.log(isEmpty(""));
 console.log(isEmpty(" "));
 console.log(isEmpty("a"));
+
+// Divide a Integer Number
+divisibleByFive = (a) => {
+  return a % 5 === 0 ? true : false;
+}
+console.log(divisibleByFive(5));
+console.log(divisibleByFive(-45));
+console.log(divisibleByFive(37));
+ 
   
  
    
