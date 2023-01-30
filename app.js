@@ -315,5 +315,15 @@ calculateFuel = (fuel) => {
 console.log(makePair(1, 2));
 console.log(makePair(51, 21));
 console.log(makePair(512124, 215));
+
+// Compare Strings by Count of Characters
+comp = (a, b) => {
+  return a.length == b.length ? true :
+   false;
+ }
+ console.log(comp("AB", "CD"));
+ console.log(comp("ABC", "DE"));
+ console.log(comp("hello", "Oskar"));
+  
  
    
