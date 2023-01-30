@@ -354,6 +354,16 @@ console.log(divisibleByFive(37));
  console.log(bitwiseAND(7, 12));
  console.log(bitwiseOR(7, 12));
  console.log(bitwiseXOR(7, 12));
+
+ // Add up the Numbers from a Single Number
+ addUp = (a) => {
+  if (a >= 1 && a <= 1000) {
+   return (a * (a + 1)) / 2;
+  }
+ }
+ console.log(addUp(4));
+ console.log(addUp(13));
+ console.log(addUp(600));
   
  
    
