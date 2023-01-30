@@ -294,4 +294,19 @@ profitableGamble = (prob, prize,
   console.log(maxNum(-1, 0));
   console.log(maxNum(1000, 400));
    
+  // Let's Fuel Up
+calculateFuel = (fuel) => {
+  let distance = fuel * 10;
+  if (distance > 0) {
+   if (fuel <= 10) {
+    return distance = 100;
+   }
+   return distance;
+  }
+ }
+ console.log(calculateFuel(3));
+ console.log(calculateFuel(23.5));
+ console.log(calculateFuel(15));
+
+ 
    
