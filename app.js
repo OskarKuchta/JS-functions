@@ -364,6 +364,23 @@ console.log(divisibleByFive(37));
  console.log(addUp(4));
  console.log(addUp(13));
  console.log(addUp(600));
+
+ // Mathstick Houses
+ matchHouses = (a) => {
+  if (a === 0) {
+    return 0;
+  }
+  if (a === 1) {
+   return 6;
+  }
+  if (a > 1) {
+   return 6 + (a - 1) * 5;
+  }
+ }
+ console.log(matchHouses(1));
+ console.log(matchHouses(4));
+ console.log(matchHouses(87));
+ 
   
  
    
