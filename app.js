@@ -308,5 +308,12 @@ calculateFuel = (fuel) => {
  console.log(calculateFuel(23.5));
  console.log(calculateFuel(15));
 
+ // Make array with function
+ makePair = (a, b) => {
+  return [a, b];
+}
+console.log(makePair(1, 2));
+console.log(makePair(51, 21));
+console.log(makePair(512124, 215));
  
    
