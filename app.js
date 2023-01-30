@@ -285,4 +285,13 @@ profitableGamble = (prob, prize,
   console.log(makesTen(10, 9));
   console.log(makesTen(9, 9));
   console.log(makesTen(1, 9));
+
+  // Higher number
+  maxNum = (a, b) => {
+    return a > b ? a : b;
+  }
+  console.log(maxNum(3, 7));
+  console.log(maxNum(-1, 0));
+  console.log(maxNum(1000, 400));
+   
    
