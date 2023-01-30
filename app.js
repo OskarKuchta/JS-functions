@@ -341,6 +341,19 @@ console.log(divisibleByFive(5));
 console.log(divisibleByFive(-45));
 console.log(divisibleByFive(37));
  
+ // Bitwise Operation
+ bitwiseAND = (a, b) => {
+  return a & b;
+ }
+ bitwiseOR = (a, b) => {
+  return a | b;
+ }
+ bitwiseXOR = (a, b) => {
+  return a ^ b;
+ }
+ console.log(bitwiseAND(7, 12));
+ console.log(bitwiseOR(7, 12));
+ console.log(bitwiseXOR(7, 12));
   
  
    
