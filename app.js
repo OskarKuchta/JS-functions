@@ -324,6 +324,14 @@ comp = (a, b) => {
  console.log(comp("AB", "CD"));
  console.log(comp("ABC", "DE"));
  console.log(comp("hello", "Oskar"));
+
+ // Empty String 
+ isEmpty = (a) => {
+  return a.length === 0 ? true : false;
+}
+console.log(isEmpty(""));
+console.log(isEmpty(" "));
+console.log(isEmpty("a"));
   
  
    
