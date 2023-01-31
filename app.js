@@ -397,5 +397,18 @@ console.log(timeForMilkAndCookies(new Date(2013,12,24)));
 console.log(timeForMilkAndCookies(new Date(2013,0,23)));
 console.log(timeForMilkAndCookies(new Date(3000, 12, 24)));
   
- 
-   
+ // Which Function Returns the Larger Number?
+ whichIsLarger = (f, g) => {
+  if (f() > g()) {
+    return '"' + "f" + '"' ;
+  }
+  if (f() === g()) {
+    return '"' + "neither" + '"';
+  }
+  if (f() < g()) {
+    return '"' + "g" + '"';
+  }
+}
+console.log(whichIsLarger(() => 5, () => 10));
+console.log(whichIsLarger(() => 25,  () => 25));
+console.log(whichIsLarger(() => 505050, () => 5050));
