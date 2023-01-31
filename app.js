@@ -434,3 +434,11 @@ has_bugs = (a) => {
 }
 console.log(has_bugs(true));
 console.log(has_bugs(false));
+
+//Evaluate an Equation 
+eq = (a) => {
+  return eval(a);
+}
+console.log(eq("1+2"));
+console.log(eq("6/(9-7)"));
+console.log(eq("3+2-4"));
