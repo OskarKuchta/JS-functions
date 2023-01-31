@@ -389,6 +389,13 @@ console.log(divisibleByFive(37));
  console.log(shiftToLeft(10, 3));
  console.log(shiftToLeft(-32, 2));
  
+ // Is it Time for Milk and Cookies?
+ timeForMilkAndCookies = (date) => {
+  return date.setMonth(12) === date.setDate(24)
+}
+console.log(timeForMilkAndCookies(new Date(2013,12,24)));
+console.log(timeForMilkAndCookies(new Date(2013,0,23)));
+console.log(timeForMilkAndCookies(new Date(3000, 12, 24)));
   
  
    
