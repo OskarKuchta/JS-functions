@@ -381,6 +381,14 @@ console.log(divisibleByFive(37));
  console.log(matchHouses(4));
  console.log(matchHouses(87));
  
+ // Left Shift by Powers of Two
+ shiftToLeft = (a, b) => {
+  return a * (2 ** b);
+ }
+ console.log(shiftToLeft(5, 2));
+ console.log(shiftToLeft(10, 3));
+ console.log(shiftToLeft(-32, 2));
+ 
   
  
    
