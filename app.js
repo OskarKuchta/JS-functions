@@ -412,3 +412,13 @@ console.log(timeForMilkAndCookies(new Date(3000, 12, 24)));
 console.log(whichIsLarger(() => 5, () => 10));
 console.log(whichIsLarger(() => 25,  () => 25));
 console.log(whichIsLarger(() => 505050, () => 5050));
+
+// Convert a Number to Base-2
+binary = (a) => {
+  if (a < 1024) {
+      return a.toString(2);
+}
+}
+console.log(binary(1));
+console.log(binary(5));
+console.log(binary(10));
