@@ -422,3 +422,15 @@ binary = (a) => {
 console.log(binary(1));
 console.log(binary(5));
 console.log(binary(10));
+
+// Return message 
+has_bugs = (a) => {
+  if (a === true) {
+      return '"say days"';
+  }
+  else {
+      return '"' + "it's a good day" + '"';
+  }
+}
+console.log(has_bugs(true));
+console.log(has_bugs(false));
