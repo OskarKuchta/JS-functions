@@ -489,3 +489,12 @@ acceptIntoMovie = (a, b) => {
 console.log(acceptIntoMovie(14, true));
 console.log(acceptIntoMovie(14, false));
 console.log(acceptIntoMovie(16, false));
+
+// Simple Array Manipulation
+incrementItems = (a) => {
+ let array = a;
+ return array.map(x => x + 1);
+}
+console.log(incrementItems([0, 1, 2, 3]));
+console.log(incrementItems([2,4,6,8]));
+console.log(incrementItems([-1, -2, -3, -4]));
