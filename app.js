@@ -505,9 +505,6 @@ shouldServeDrinks = (age, onBreak) => {
   if (age >= 18) {
   return true;
   }
-  else {
-    return false;
-  }
  }
  else {
   return false;
@@ -516,3 +513,11 @@ shouldServeDrinks = (age, onBreak) => {
 console.log(shouldServeDrinks(17, true));
 console.log(shouldServeDrinks(19, false));
 console.log(shouldServeDrinks(30, true));
+
+// Century Crisis
+futurePeople = (people, month) => {
+ return people + month * 360;
+}
+console.log(futurePeople(256,2));
+console.log(futurePeople(3248,6));
+console.log(futurePeople(5240,3));
