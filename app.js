@@ -498,3 +498,21 @@ incrementItems = (a) => {
 console.log(incrementItems([0, 1, 2, 3]));
 console.log(incrementItems([2,4,6,8]));
 console.log(incrementItems([-1, -2, -3, -4]));
+
+// Drinks Allowed? 
+shouldServeDrinks = (age, onBreak) => {
+ if (onBreak == false) {
+  if (age >= 18) {
+  return true;
+  }
+  else {
+    return false;
+  }
+ }
+ else {
+  return false;
+ }
+}
+console.log(shouldServeDrinks(17, true));
+console.log(shouldServeDrinks(19, false));
+console.log(shouldServeDrinks(30, true));
