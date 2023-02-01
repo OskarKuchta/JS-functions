@@ -451,3 +451,14 @@ console.log(radiansToDegrees(1));
 console.log(radiansToDegrees(20));
 console.log(radiansToDegrees(50));
 
+// Return Negative
+returnNegative = (a) => {
+  if (a === 0){
+    return a;
+  }
+  return a = -a;
+}
+console.log(returnNegative(-4));
+console.log(returnNegative(15));
+console.log(returnNegative(4));
+console.log(returnNegative(0));
