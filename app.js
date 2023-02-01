@@ -462,3 +462,12 @@ console.log(returnNegative(-4));
 console.log(returnNegative(15));
 console.log(returnNegative(4));
 console.log(returnNegative(0));
+
+// Reverse an Array 
+reverse = (a) => {
+ let array = a;
+ return array.reverse();
+}
+console.log(reverse([1,2,3,4]));
+console.log(reverse([9,9,2,3,4]));
+console.log(reverse([]));
