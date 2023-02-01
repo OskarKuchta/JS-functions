@@ -471,3 +471,21 @@ reverse = (a) => {
 console.log(reverse([1,2,3,4]));
 console.log(reverse([9,9,2,3,4]));
 console.log(reverse([]));
+
+// Movie Theatre Admittance
+acceptIntoMovie = (a, b) => {
+  if (a >= 15) {
+    return true;
+  }
+  if (a < 15) {
+    if (b == true) {
+      return true;
+    }
+  else {
+    return false;
+  }
+  }
+}
+console.log(acceptIntoMovie(14, true));
+console.log(acceptIntoMovie(14, false));
+console.log(acceptIntoMovie(16, false));
