@@ -628,3 +628,12 @@ isOdd = (a) => {
 console.log(isOdd(-5));
 console.log(isOdd(25));
 console.log(isOdd(0));
+
+// RegEx Exercise 1: Find the Time
+findReg = () => {
+  let bar = "09:00" + "123:456"
+  let filter = /[0-9]{2}:[0-9]{2}/;
+  let result = bar.match(filter);
+  return result;
+}
+console.log(findReg());
