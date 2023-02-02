@@ -640,6 +640,8 @@ console.log(findReg());
 
 // RegEx XIV: Group Ranges x|y
 regStepTwo = () => {
-  const regexp = /blue|red/;
-
+  const regexp = /(red|blue) flag/g;
+  let result = "yellow flag red flag blue flag green flag".match(regexp);
+ return result;
 }
+console.log(regStepTwo());
