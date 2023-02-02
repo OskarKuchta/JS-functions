@@ -592,3 +592,11 @@ yearsInOneHouse = (age, moves) => {
 console.log(yearsInOneHouse(30, 1));
 console.log(yearsInOneHouse(15, 2));
 console.log(yearsInOneHouse(80, 0));
+
+// Word without First Character
+newWord = (a) => {
+  let word = a;
+  // return word.slice(1);
+  return word.substring(1);
+}
+console.log(newWord("apple"));
