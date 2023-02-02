@@ -612,3 +612,11 @@ console.log(flipBool(true));
 console.log(flipBool(false));
 console.log(flipBool(1));
 console.log(flipBool(0));
+
+// Name Greeting!
+helloName = (name) => {
+  return '"Hello ' + name + '!"';
+}
+console.log(helloName("Gerald"));
+console.log(helloName("Tiffany"));
+console.log(helloName("Ed"));
