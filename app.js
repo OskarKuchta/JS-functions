@@ -620,3 +620,11 @@ helloName = (name) => {
 console.log(helloName("Gerald"));
 console.log(helloName("Tiffany"));
 console.log(helloName("Ed"));
+
+// Check Whether a Given Number Is Odd 
+isOdd = (a) => {
+  return a % 2 == 0 ? false : true;
+}
+console.log(isOdd(-5));
+console.log(isOdd(25));
+console.log(isOdd(0));
