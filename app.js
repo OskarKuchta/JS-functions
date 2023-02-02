@@ -543,3 +543,12 @@ stringToInt = (a) => {
 }
 console.log(intToString(4));
 console.log(stringToInt("4"));
+
+// On/Off Switches
+posCom = (a) => {
+  //return 2 ** a;
+  return Math.pow(2,a);
+}
+console.log(posCom(1));
+console.log(posCom(3));
+console.log(posCom(10));
