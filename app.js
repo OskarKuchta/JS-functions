@@ -532,3 +532,14 @@ getLastItem = (a) => {
 console.log(getLastItem([1,2,3]));
 console.log(getLastItem(["cat", "dog", "duck"]));
 console.log(getLastItem([true, false, true]));
+
+// String and Number Conversions
+intToString = (a) => {
+  let convert = a;
+  return '"' + a + '"';
+}
+stringToInt = (a) => {
+  return a;
+}
+console.log(intToString(4));
+console.log(stringToInt("4"));
