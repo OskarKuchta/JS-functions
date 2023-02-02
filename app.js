@@ -552,3 +552,14 @@ posCom = (a) => {
 console.log(posCom(1));
 console.log(posCom(3));
 console.log(posCom(10));
+
+// Among Us Imposter Formula
+imposterFormula = (a, b) => {
+  if (b <= 10  && a <= 3) {
+    //return ((a / b) * 100).toFixed(2) + "%";
+    return Math.round((a / b) * 100) + "%";
+  }
+}
+console.log(imposterFormula(1, 10));
+console.log(imposterFormula(1, 3));
+console.log(imposterFormula(1,8));
