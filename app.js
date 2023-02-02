@@ -632,8 +632,14 @@ console.log(isOdd(0));
 // RegEx Exercise 1: Find the Time
 findReg = () => {
   let bar = "09:00" + "123:456"
-  let filter = /[0-9]{2}:[0-9]{2}/;
+  let filter = /09:00/i;
   let result = bar.match(filter);
   return result;
 }
 console.log(findReg());
+
+// RegEx XIV: Group Ranges x|y
+regStepTwo = () => {
+  const regexp = /blue|red/;
+
+}
