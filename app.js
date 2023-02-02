@@ -600,3 +600,15 @@ newWord = (a) => {
   return word.substring(1);
 }
 console.log(newWord("apple"));
+console.log(newWord("cherry"));
+console.log(newWord("Oskar"));
+
+// Flip the Boolean
+flipBool = (a) => {
+return a == true ? 0 : 1;
+return a == 1 ? 0 : 1;
+}
+console.log(flipBool(true));
+console.log(flipBool(false));
+console.log(flipBool(1));
+console.log(flipBool(0));
