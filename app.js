@@ -521,3 +521,14 @@ futurePeople = (people, month) => {
 console.log(futurePeople(256,2));
 console.log(futurePeople(3248,6));
 console.log(futurePeople(5240,3));
+
+// Return the Last Element in an Array
+
+getLastItem = (a) => {
+  let array = a;
+  let get = array.pop();
+  return get;
+}
+console.log(getLastItem([1,2,3]));
+console.log(getLastItem(["cat", "dog", "duck"]));
+console.log(getLastItem([true, false, true]));
