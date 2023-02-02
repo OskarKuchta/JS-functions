@@ -563,3 +563,24 @@ imposterFormula = (a, b) => {
 console.log(imposterFormula(1, 10));
 console.log(imposterFormula(1, 3));
 console.log(imposterFormula(1,8));
+
+// Find Out the Leap Year 
+leapYear = (a) => {
+  if(a % 4 == 0) {
+    if(a % 100 == 0) {
+      if (a % 400 == 0) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    }
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+console.log(leapYear(2020));
+console.log(leapYear(2021));
+console.log(leapYear(1700));
