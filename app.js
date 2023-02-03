@@ -760,3 +760,20 @@ seriesResistance = (a) => {
 console.log(seriesResistance([1, 5, 6, 3]));
 console.log(seriesResistance([16, 3.5, 6]));
 console.log(seriesResistance([0.5, 0.5]));
+
+// Largest Swap
+largestSwap = (number) => {
+  if (number > 9 && number < 100) {
+    let check = number;
+    let reverse = number.toString().split('').reverse().join('');
+  if (check >= reverse) {
+    return true;
+  }
+  if (check <= reverse) {
+    return false;
+  }
+}
+}
+console.log(largestSwap(14));
+console.log(largestSwap(53));
+console.log(largestSwap(99));
