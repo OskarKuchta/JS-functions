@@ -747,3 +747,16 @@ numberSquares = (a) => {
 console.log(numberSquares(0));
 console.log(numberSquares(4));
 console.log(numberSquares(5));
+
+// Sum of Resistance in Series Circuits
+seriesResistance = (a) => {
+  check = (total, num) => {
+    return total + num;
+  }
+  let numbers = a;
+  let change = numbers.reduce(check);
+  return change;
+}
+console.log(seriesResistance([1, 5, 6, 3]));
+console.log(seriesResistance([16, 3.5, 6]));
+console.log(seriesResistance([0.5, 0.5]));
