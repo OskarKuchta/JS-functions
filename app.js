@@ -717,9 +717,17 @@ console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));
 findIndex = (array, select) => {
  let arr = array;
  let check = arr.indexOf(select);
- return check
+ return check;
 }
 console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh"));
 console.log(findIndex(["Red", "blue", "Blue", "Green"], "blue"));
 console.log(findIndex(["a", "g", "y", "d"], "d"));
 console.log(findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple"));
+
+// Array Indexing
+valueAt = (a, b) => {
+ return a[Math.floor(b)];
+}
+console.log(valueAt([1, 2, 3, 4, 5, 6], 10 / 2));
+console.log(valueAt([1, 2, 3, 4, 5, 6], 8.0 / 2));
+console.log(valueAt([1, 2, 3, 4], 6.535355314 / 2));
