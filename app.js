@@ -777,3 +777,15 @@ largestSwap = (number) => {
 console.log(largestSwap(14));
 console.log(largestSwap(53));
 console.log(largestSwap(99));
+
+// What's Hiding Amongst the Crowd? 
+detectWord = (a) => {
+  let word = a;
+  let regex = /[^A-Z]/g;
+  let check = word.match(regex);
+  let connect = check.join('');
+  return connect;
+}
+console.log(detectWord("UcUNFYGaFYFYGtNUH"));
+console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
+console.log(detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
