@@ -673,3 +673,18 @@ circle_or_square = (rad, area) => {
 console.log(circle_or_square(16, 625));
 console.log(circle_or_square(5, 100));
 console.log(circle_or_square(8, 144));
+
+// Triangle and Parallelogram Area Finder
+areaShape = (base, height, shape) => {
+  if(shape == "triangle" || "parallelogram") {
+    if(shape == "triangle"){
+      return 0.5 * base * height;
+    }
+    if(shape == "parallelogram") {
+      return base * height;
+    }
+  }
+}
+console.log(areaShape(2,3, "triangle"));
+console.log(areaShape(8,6, "parallelogram"));
+console.log(areaShape(2.9, 1.3, "parallelogram"));
