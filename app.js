@@ -688,3 +688,19 @@ areaShape = (base, height, shape) => {
 console.log(areaShape(2,3, "triangle"));
 console.log(areaShape(8,6, "parallelogram"));
 console.log(areaShape(2.9, 1.3, "parallelogram"));
+
+// Many Operators! 
+operate = (a, b, sign) => {
+ if(sign == "+") {
+  return a + b;
+ }
+ if(sign == "-") {
+  return a - b;
+ }
+ if(sign == "%") {
+  return a % b;
+ } 
+}
+console.log(operate(1,2,"+"));
+console.log(operate(7,10,"-"));
+console.log(operate(20,10,"%"));
