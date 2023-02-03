@@ -656,7 +656,20 @@ stackBoxes = (a) => {
 }
 }
 console.log(stackBoxes(1));
-
 console.log(stackBoxes(2));
-
 console.log(stackBoxes(0));
+
+// Circle or Square 
+circle_or_square = (rad, area) => {
+ let circle = 2 * rad * 3.14;
+ let square = Math.sqrt(area) * 4;
+ if (circle > square) {
+  return true;
+ }
+ else {
+  return false;
+ }
+}
+console.log(circle_or_square(16, 625));
+console.log(circle_or_square(5, 100));
+console.log(circle_or_square(8, 144));
