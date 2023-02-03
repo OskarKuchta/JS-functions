@@ -731,3 +731,19 @@ valueAt = (a, b) => {
 console.log(valueAt([1, 2, 3, 4, 5, 6], 10 / 2));
 console.log(valueAt([1, 2, 3, 4, 5, 6], 8.0 / 2));
 console.log(valueAt([1, 2, 3, 4], 6.535355314 / 2));
+
+// Number of Squares in an N * N Grid
+numberSquares = (a) => {
+ if(a == 0){
+  return 0;
+ }
+ if(a == 1){
+  return 1;
+ }
+ if(a > 1 ) {
+  return a * (a +1 ) * (2 * a + 1) / 6;
+ }
+}
+console.log(numberSquares(0));
+console.log(numberSquares(4));
+console.log(numberSquares(5));
