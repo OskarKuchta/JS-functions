@@ -645,3 +645,18 @@ regStepTwo = () => {
  return result;
 }
 console.log(regStepTwo());
+
+// Stack the Boxes
+stackBoxes = (a) => {
+  if (a >= 0) {
+  if (a == 0) {
+    return a = 0;
+  }
+  return Math.pow(2, a);
+}
+}
+console.log(stackBoxes(1));
+
+console.log(stackBoxes(2));
+
+console.log(stackBoxes(0));
