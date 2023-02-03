@@ -789,3 +789,12 @@ detectWord = (a) => {
 console.log(detectWord("UcUNFYGaFYFYGtNUH"));
 console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
 console.log(detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
+
+// Hex to Binary
+toBinary = (a) => {
+  let convert = a.toString(2);
+  return convert;
+}
+console.log(toBinary(0xFF));
+console.log(toBinary(0xAA));
+console.log(toBinary(0xFA));
