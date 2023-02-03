@@ -704,3 +704,11 @@ operate = (a, b, sign) => {
 console.log(operate(1,2,"+"));
 console.log(operate(7,10,"-"));
 console.log(operate(20,10,"%"));
+
+// Concatenating Two Integer Arrays
+concat = (a, b) => {
+ return a.concat(b);
+}
+console.log(concat([1, 3, 5], [2, 6, 8]));
+console.log(concat([7, 8], [10, 9, 1, 1, 2]));
+console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));
