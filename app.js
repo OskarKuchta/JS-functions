@@ -712,3 +712,14 @@ concat = (a, b) => {
 console.log(concat([1, 3, 5], [2, 6, 8]));
 console.log(concat([7, 8], [10, 9, 1, 1, 2]));
 console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));
+
+// Find the Index 
+findIndex = (array, select) => {
+ let arr = array;
+ let check = arr.indexOf(select);
+ return check
+}
+console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh"));
+console.log(findIndex(["Red", "blue", "Blue", "Green"], "blue"));
+console.log(findIndex(["a", "g", "y", "d"], "d"));
+console.log(findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple"));
