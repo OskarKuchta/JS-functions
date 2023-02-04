@@ -840,5 +840,6 @@ sortByDrinkPrice = (drinks) => {
  if(first.price < second.price) {
   return [first.price, second.price];
  }
+// return drinks.sort((a,b)=> a.price - b.price)
 }
 console.log(sortByDrinkPrice(drinks));
