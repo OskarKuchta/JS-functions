@@ -825,3 +825,20 @@ let p3 = new Person("Lily", 24);
 console.log(p1.compareAge(p2));
 console.log(p2.compareAge(p1));
 console.log(p1.compareAge(p3));
+
+// Drink Sorting
+let drinks = [
+  {name: "lemonade", price: 50},
+  {name: "lime", price: 10}
+];
+let first = drinks [0];
+let second = drinks[1];
+sortByDrinkPrice = (drinks) => {
+ if(first.price > second.price) {
+  return [second.price, first.price];
+ }
+ if(first.price < second.price) {
+  return [first.price, second.price];
+ }
+}
+console.log(sortByDrinkPrice(drinks));
