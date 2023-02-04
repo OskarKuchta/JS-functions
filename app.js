@@ -843,3 +843,13 @@ sortByDrinkPrice = (drinks) => {
 // return drinks.sort((a,b)=> a.price - b.price)
 }
 console.log(sortByDrinkPrice(drinks));
+
+// arrayValuesTypes 
+arrayValuesTypes = (array) => {
+ const arr = array;
+ const map = array.map(x => typeof x);
+ return map
+}
+console.log(arrayValuesTypes([1, 2, "null", []]));
+console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
+console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));
