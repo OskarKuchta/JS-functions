@@ -853,3 +853,11 @@ arrayValuesTypes = (array) => {
 console.log(arrayValuesTypes([1, 2, "null", []]));
 console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
 console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));
+
+// Find the Index 
+search = (a, index) => {
+  return a.indexOf(index);
+}
+console.log(search([1, 5, 3], 5));
+console.log(search([9, 8, 3], 3));
+console.log(search([1, 2, 3], 4));
