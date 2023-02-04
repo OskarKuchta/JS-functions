@@ -861,3 +861,13 @@ search = (a, index) => {
 console.log(search([1, 5, 3], 5));
 console.log(search([9, 8, 3], 3));
 console.log(search([1, 2, 3], 4));
+
+// Convert All Array Items to String
+parseArray = (a) => {
+ let arr = a;
+ return arr.map(x => x.toString());
+}
+console.log(parseArray([1, 2, "a", "b"]));
+console.log(parseArray(["abc", 123, "def", 456]));
+console.log(parseArray([1, 2, 3, 17, 24, 3, "a", "123b"]));
+console.log(parseArray([]));
