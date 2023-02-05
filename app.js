@@ -873,7 +873,7 @@ console.log(parseArray([1, 2, 3, 17, 24, 3, "a", "123b"]));
 console.log(parseArray([]));
 
 
-// Recursion: Length of a String
+// Recursioh
 length = (a) => {
  return typeof a == "string" ? a
   .length : undefined;
@@ -883,3 +883,12 @@ console.log(length("make"));
 console.log(length("a"));
 console.log(length(""));
 
+// Divides Evenly
+dividesEvenly = (a, b) => {
+  if (a >= 0) {
+   return a % b == 0 ? true : false;
+  }
+ }
+ console.log(dividesEvenly(98, 7));
+ console.log(dividesEvenly(85, 4));
+ 
