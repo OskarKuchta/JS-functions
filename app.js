@@ -924,3 +924,11 @@ stringInt = (a) => {
  console.log(stringInt("1000"));
  console.log(stringInt("6.7"));
  
+ // Area of a Rectangle  
+area = (a, b) => {
+  return a > 0 && b > 0 ? a * b : -1;
+ }
+ console.log(area(3, 4));
+ console.log(area(10, 11));
+ console.log(area(-1, 5));
+ console.log(area(0, 2));
