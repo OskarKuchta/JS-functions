@@ -892,9 +892,24 @@ dividesEvenly = (a, b) => {
  console.log(dividesEvenly(98, 7));
  console.log(dividesEvenly(85, 4));
  
- // Find the Smallest and Biggest Numbers
+// Find the Smallest and Biggest Numbers
 minMax = (a) => {
   return [Math.min(...a), Math.max(...
    a)];
  }
  console.log(minMax([1, 2, 3, 4, 5]));
+
+// Check if One Array can be Nested to Another
+canNest = (a, b) => {
+  let arrA1 = Math.min(...a);
+  let arrB1 = Math.min(...b);
+  if (arrA1 > arrB1) {
+   return true;
+  } else {
+   return false;
+  }
+ }
+ console.log(canNest([1, 2, 3, 4], [0,6]));
+ console.log(canNest([3, 1], [4, 0]));
+ console.log(canNest([9, 9, 8], [8,9]));
+ console.log(canNest([1, 2, 3, 4], [2,3]));
