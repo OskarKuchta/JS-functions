@@ -892,3 +892,9 @@ dividesEvenly = (a, b) => {
  console.log(dividesEvenly(98, 7));
  console.log(dividesEvenly(85, 4));
  
+ // Find the Smallest and Biggest Numbers
+minMax = (a) => {
+  return [Math.min(...a), Math.max(...
+   a)];
+ }
+ console.log(minMax([1, 2, 3, 4, 5]));
