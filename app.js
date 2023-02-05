@@ -913,3 +913,14 @@ canNest = (a, b) => {
  console.log(canNest([3, 1], [4, 0]));
  console.log(canNest([9, 9, 8], [8,9]));
  console.log(canNest([1, 2, 3, 4], [2,3]));
+
+ //String to Integer  
+stringInt = (a) => {
+  if (a > 0) {
+   return parseInt(a);
+  }
+ }
+ console.log(stringInt("12.5"));
+ console.log(stringInt("1000"));
+ console.log(stringInt("6.7"));
+ 
