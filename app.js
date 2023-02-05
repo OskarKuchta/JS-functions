@@ -940,5 +940,26 @@ concatName = (a, b) => {
  console.log(concatName("First",
   "Last"));
  console.log(concatName("John", "Doe"));
- console.log(concatName("Marry",
-  "Jane"))
+ console.log(concatName("Marry","Jane"));
+
+ // Arrow Functions
+add2 = (x) => {
+  return x + 2;
+ }
+ add3 = (x) => {
+     return x + 3;
+ }
+ add5 = (x) => {
+     return x + 5;
+ }
+ add7 = (x) => {
+     return x + 7;
+ }
+ add11 = (x) => {
+     return x + 11;
+ }
+ console.log(add2(2));
+ console.log(add3(2));
+ console.log(add5(2));
+ console.log(add7(2));
+ console.log(add11(2));
