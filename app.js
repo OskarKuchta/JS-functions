@@ -932,3 +932,13 @@ area = (a, b) => {
  console.log(area(10, 11));
  console.log(area(-1, 5));
  console.log(area(0, 2));
+
+ // Concatenate First and Last Name into One String
+concatName = (a, b) => {
+  return '"' + b + " " + a + '"';
+ }
+ console.log(concatName("First",
+  "Last"));
+ console.log(concatName("John", "Doe"));
+ console.log(concatName("Marry",
+  "Jane"))
