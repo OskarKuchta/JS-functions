@@ -963,3 +963,10 @@ add2 = (x) => {
  console.log(add5(2));
  console.log(add7(2));
  console.log(add11(2));
+
+ // Using Ternary Operators
+
+let smile = true;
+let checkHumor = smile ? true : false;
+console.log(checkHumor);
+console.log(!checkHumor);
