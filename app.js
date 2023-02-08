@@ -981,4 +981,18 @@ equilbrium = (x) => {
   }
 }
 console.log(equilbrium(7));
-console.log(equilbrium(-2))
+console.log(equilbrium(-2));
+
+// Is the String Odd or Even?
+
+oddOrEven = (a) => {
+  let word = a.length;
+  if (word % 2 == 0) {
+      return true;
+  }
+  else {
+      return false;
+  }
+}
+console.log(oddOrEven("apple"));
+console.log(oddOrEven("cherry"));
