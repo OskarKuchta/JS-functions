@@ -996,3 +996,12 @@ oddOrEven = (a) => {
 }
 console.log(oddOrEven("apple"));
 console.log(oddOrEven("cherry"));
+
+// ES6: Destructuring Arrays I
+
+const arr = [1, 2, 3, 4, 5, 6];
+const a = arr[4];
+const b = arr[5];
+const c = a + b;
+
+console.log(c);
