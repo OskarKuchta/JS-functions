@@ -970,3 +970,15 @@ let smile = true;
 let checkHumor = smile ? true : false;
 console.log(checkHumor);
 console.log(!checkHumor);
+
+// Minimal IV: if-else if-else Inferno
+equilbrium = (x) => {
+  if (x > 0) {
+      return "positive";
+  }
+  if (x < 0) {
+      return "negative";
+  }
+}
+console.log(equilbrium(7));
+console.log(equilbrium(-2))
