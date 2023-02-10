@@ -1006,10 +1006,20 @@ const c = a + b;
 
 console.log(c);
 
-//Minimal I: If Boolean Then Boolean
+// Minimal I: If Boolean Then Boolean
 minimal = (a) => {
   return a % 2 === 0 ? true : false;
 }
 console.log(minimal(8));
 console.log(minimal(11));
 console.log(minimal(0));
+
+// Count Instances of a Character in a String
+charCount = (a, b) => {
+ let str = b.split('');
+  let check = str.filter((A) => (a === A)).length;
+ return check;
+}
+console.log(charCount("a", "edabit"));
+console.log(charCount("c", "Chamber of secrets"));
+console.log(charCount("b", "big fat bubble"));
