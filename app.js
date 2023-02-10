@@ -1005,3 +1005,11 @@ const b = arr[5];
 const c = a + b;
 
 console.log(c);
+
+//Minimal I: If Boolean Then Boolean
+minimal = (a) => {
+  return a % 2 === 0 ? true : false;
+}
+console.log(minimal(8));
+console.log(minimal(11));
+console.log(minimal(0));
