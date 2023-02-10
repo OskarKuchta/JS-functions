@@ -1023,3 +1023,16 @@ charCount = (a, b) => {
 console.log(charCount("a", "edabit"));
 console.log(charCount("c", "Chamber of secrets"));
 console.log(charCount("b", "big fat bubble"));
+
+// 50-30-20 Strategy
+fiftyThirtyTwenty = (a) => {
+let obj = {
+  Needs: 0.5 * a,
+  Wants: 0.3 * a,
+  Savings: 0.2 * a
+}
+return obj;
+}
+console.log(fiftyThirtyTwenty(10000));
+console.log(fiftyThirtyTwenty(50000));
+console.log(fiftyThirtyTwenty(13450));
