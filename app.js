@@ -1036,3 +1036,11 @@ return obj;
 console.log(fiftyThirtyTwenty(10000));
 console.log(fiftyThirtyTwenty(50000));
 console.log(fiftyThirtyTwenty(13450));
+
+// Inches to Feet
+inchesToFeet = (a) => {
+  return a = a / 12;
+}
+console.log(inchesToFeet(324));
+console.log(inchesToFeet(12));
+console.log(inchesToFeet(36));
