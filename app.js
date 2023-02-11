@@ -1044,3 +1044,12 @@ inchesToFeet = (a) => {
 console.log(inchesToFeet(324));
 console.log(inchesToFeet(12));
 console.log(inchesToFeet(36));
+
+// I'd Like a New Shade of Blue, Please
+howManyWalls = (square, width, height) => {
+  let calc = square / (width * height);
+  return parseInt(calc);
+}
+console.log(howManyWalls(100, 4, 5));
+console.log(howManyWalls(10, 15, 12));
+console.log(howManyWalls(41, 3, 6));
