@@ -1053,3 +1053,13 @@ howManyWalls = (square, width, height) => {
 console.log(howManyWalls(100, 4, 5));
 console.log(howManyWalls(10, 15, 12));
 console.log(howManyWalls(41, 3, 6));
+
+// To the Power of
+calculateExponent = (a, b) => {
+  return a **= b;
+  // Math.pow(a,b);
+ }
+ console.log(calculateExponent(5,5));
+ console.log(calculateExponent(10,10));
+ console.log(calculateExponent(3,3));
+ 
