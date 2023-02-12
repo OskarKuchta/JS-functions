@@ -1099,3 +1099,13 @@ isFirstSuperior = (a, b) => {
  console.log(isFirstSuperior(["a", "d", "c"], ["a", "b", "c"]));
  console.log(isFirstSuperior([1, 2, 3, 4], [1, 2, 4, 4]));
  console.log(isFirstSuperior([true, 10, "zebra"], [true, 10, "zebra"]));
+
+ // Come Check Out This Crazy Function
+crazyfunction = (a, b) => {
+  let first = a;
+  first ^= b;
+  return first;
+}
+console.log(crazyfunction(10, 20));
+console.log(crazyfunction(17, 35));
+console.log(crazyfunction(61, 233));
