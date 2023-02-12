@@ -1085,3 +1085,17 @@ potatoes = (a) => {
 console.log(potatoes("potato"));
 console.log(potatoes("potatopotato"));
 console.log(potatoes("potatoapple"));
+
+// Slightly Superior
+isFirstSuperior = (a, b) => {
+  if(a > b) {
+     return true;
+  }
+  else {
+     return false;
+  }
+ }
+ console.log(isFirstSuperior([1, 2, 4], [1, 2, 3]));
+ console.log(isFirstSuperior(["a", "d", "c"], ["a", "b", "c"]));
+ console.log(isFirstSuperior([1, 2, 3, 4], [1, 2, 4, 4]));
+ console.log(isFirstSuperior([true, 10, "zebra"], [true, 10, "zebra"]));
