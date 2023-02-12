@@ -1073,3 +1073,15 @@ tuckIn = (add, arr) => {
 console.log(tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]));
 console.log(tuckIn([15,150], [45, 75, 35]));
 console.log(tuckIn([[1, 2], [5, 6]], [[3, 4]]));
+
+// Find the Amount of Potatoes
+potatoes = (a) => {
+  let text = a;
+  let regex = /potato/g;
+  let check = text.match(regex);
+  let result = check.length;
+  return result;
+}
+console.log(potatoes("potato"));
+console.log(potatoes("potatopotato"));
+console.log(potatoes("potatoapple"));
