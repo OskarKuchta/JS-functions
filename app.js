@@ -1109,3 +1109,10 @@ crazyfunction = (a, b) => {
 console.log(crazyfunction(10, 20));
 console.log(crazyfunction(17, 35));
 console.log(crazyfunction(61, 233));
+
+// No Conditionals?
+flip = (a) => {
+  return  Math.abs(a - 1);
+}
+console.log(flip(0));
+console.log(flip(1));
