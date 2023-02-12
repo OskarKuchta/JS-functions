@@ -1063,3 +1063,13 @@ calculateExponent = (a, b) => {
  console.log(calculateExponent(10,10));
  console.log(calculateExponent(3,3));
  
+ // Tuck in Array
+tuckIn = (add, arr) => {
+  let array = arr;
+  let start = array.unshift(add[0]);
+  let end = array.push(add[1]);
+  return array;
+}
+console.log(tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]));
+console.log(tuckIn([15,150], [45, 75, 35]));
+console.log(tuckIn([[1, 2], [5, 6]], [[3, 4]]));
