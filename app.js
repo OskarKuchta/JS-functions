@@ -1116,3 +1116,17 @@ flip = (a) => {
 }
 console.log(flip(0));
 console.log(flip(1));
+
+// Number Split
+numberSplit = (a) => {
+  let first = Math.floor(0.5 * a);
+  let second = Math.ceil(0.5 * a);
+  let array = [];
+  array.push(first);
+  array.push(second);
+  return array;
+}
+console.log(numberSplit(4));
+console.log(numberSplit(10));
+console.log(numberSplit(11));
+console.log(numberSplit(-9));
