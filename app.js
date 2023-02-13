@@ -1142,4 +1142,16 @@ multiSum = (a) => {
 console.log(multiSum(1));
 console.log(multiSum(6));
 console.log(multiSum(10));
-console.log(multiSum(8))
+console.log(multiSum(8));
+
+// filter Array
+filterArray = (a) => {
+  checkArray = (item) => {
+    return Number.isInteger(item);
+  }
+  let show = a.filter(checkArray);
+  return show;
+  }
+console.log(filterArray([1, 2, "a", "b"]));
+console.log(filterArray([1, "a", "b", 0, 15]));
+console.log(filterArray([1, 2, "aasf", "1", "123", 123]));
