@@ -1130,3 +1130,16 @@ console.log(numberSplit(4));
 console.log(numberSplit(10));
 console.log(numberSplit(11));
 console.log(numberSplit(-9));
+
+// Sum of Multiplication 
+multiSum = (a) => {
+  let number = 0;
+  for(let i=1; i <= 10; i++){
+      number += a * i;
+  }
+  return number;
+}
+console.log(multiSum(1));
+console.log(multiSum(6));
+console.log(multiSum(10));
+console.log(multiSum(8))
