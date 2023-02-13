@@ -1155,3 +1155,23 @@ filterArray = (a) => {
 console.log(filterArray([1, 2, "a", "b"]));
 console.log(filterArray([1, "a", "b", 0, 15]));
 console.log(filterArray([1, 2, "aasf", "1", "123", 123]));
+
+//Seven Boom!
+sevenBoom = (a) => {
+  let arr = a;
+  let arr2 = arr.toString();
+  let regex = /7/i;
+  let show = arr2.match(regex);
+  checkArray = (item) => {
+      if (item == 7) {
+          return "Boom!";
+      }
+      return "there is no 7 in the array";
+  }
+  show = checkArray(show);
+  return show;
+}
+console.log(sevenBoom([1, 2, 3, 4, 5, 6, 7]));
+console.log(sevenBoom([8, 6, 33, 100]));
+console.log(sevenBoom([2, 55, 60, 97, 86]));
+console.log(sevenBoom([29, 14, 60, 9, 58]));
