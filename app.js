@@ -1247,3 +1247,12 @@ RegexFive = (a) => {
   return result;
 }
 console.log(RegexFive("alice15@gmail.com"));
+
+// Sort by String Length
+sortByLength = (a) => {
+let result = a.sort((a,b) => { return a.length-b.length;});
+return a;
+}
+console.log(sortByLength(["a", "ccc", "dddd", "bb"]));
+console.log(sortByLength(["apple", "pie", "shortcake"]));
+console.log(sortByLength(["may", "april", "september", "august"]));
