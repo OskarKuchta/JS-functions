@@ -1227,3 +1227,14 @@ return arr1;
 console.log(spotlight_sum(19));
 console.log(spotlight_sum(48));
 console.log(spotlight_sum(88));
+
+//Repeating Letters
+doubleChar = (a) => {
+  let check = a.split('');
+  let doubleString = check.map((item) => {return item + item});
+  let result = doubleString.join('');
+  return result;
+}
+console.log(doubleChar("String"));
+console.log(doubleChar("Hello World!"));
+console.log(doubleChar("1234!_ "));
