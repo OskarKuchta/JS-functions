@@ -1267,3 +1267,14 @@ return result;
 console.log(sumOfCubes([1, 5, 9]));
 console.log(sumOfCubes([3, 4, 5]));
 console.log(sumOfCubes([2]));
+
+// Highest Digit
+highestDigit = (a) => {
+  let text = a;
+  let check = String(a).split('');
+  let result = Math.max(...check);
+  return result;
+}
+console.log(highestDigit(379));
+console.log(highestDigit(2));
+console.log(highestDigit(377401));
