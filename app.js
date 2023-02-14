@@ -1238,3 +1238,12 @@ doubleChar = (a) => {
 console.log(doubleChar("String"));
 console.log(doubleChar("Hello World!"));
 console.log(doubleChar("1234!_ "));
+
+// RegEx XV
+RegexFive = (a) => {
+  let check = a;
+  const reg = /[^a-z, 0-9, ]/g;
+  let result = check.match(reg);
+  return result;
+}
+console.log(RegexFive("alice15@gmail.com"));
