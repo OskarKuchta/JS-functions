@@ -1175,3 +1175,19 @@ console.log(sevenBoom([1, 2, 3, 4, 5, 6, 7]));
 console.log(sevenBoom([8, 6, 33, 100]));
 console.log(sevenBoom([2, 55, 60, 97, 86]));
 console.log(sevenBoom([29, 14, 60, 9, 58]));
+
+// Incorrect Import Statement 
+fixImport = (a) => {
+  let array = a.split(' ');
+  let firstItem = array.splice(0,1);
+  let secondItem = array.splice(0,1);
+  let firstConvert = firstItem.toString();
+  let secondConvert = secondItem.toString();
+  array.push(firstConvert);
+  array.push(secondConvert);
+  let result = array.join(' ');
+ return result;
+}
+console.log(fixImport("import object from module_name"));
+console.log(fixImport("import randint from random"));
+console.log(fixImport("import pi from math"));
