@@ -1256,3 +1256,14 @@ return a;
 console.log(sortByLength(["a", "ccc", "dddd", "bb"]));
 console.log(sortByLength(["apple", "pie", "shortcake"]));
 console.log(sortByLength(["may", "april", "september", "august"]));
+
+// Sum of Cubes
+sumOfCubes = (a) => {
+  let array = a;
+  let arr = array.map((x) => { return x ** 3});
+  let result = arr.reduce((sum, number) => { return sum + number})
+return result;
+}
+console.log(sumOfCubes([1, 5, 9]));
+console.log(sumOfCubes([3, 4, 5]));
+console.log(sumOfCubes([2]));
