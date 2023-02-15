@@ -1344,24 +1344,15 @@ console.log(drop([1, 2, 3], 2));
 console.log(drop([1, 2, 3], 5));
 console.log(drop([1, 2, 3], 0));
    
-   //  Upvotes vs Downvotes  
-   getVoteCount = (a) => {
-    if (a.upvote > 0) {
-     return a.upvote - a.downvote;
-    }
+//  Upvotes vs Downvotes  
+getVoteCount = (a) => {
+  if (a.upvote > 0) {
+    return a.upvote - a.downvote;
+  }
    }
-   console.log(getVoteCount({
-    upvote: 13,
-    downvote: 2
-   }));
-   console.log(getVoteCount({
-    upvote: 126,
-    downvote: 126
-   }));
-   console.log(getVoteCount({
-    upvote: 10,
-    downvote: 33
-   }));
+console.log(getVoteCount({upvote: 13,downvote: 2}));
+console.log(getVoteCount({upvote: 126,downvote: 126}));
+console.log(getVoteCount({upvote: 10,downvote: 33}));
 
    // Reverse the number
    
