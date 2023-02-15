@@ -1323,3 +1323,13 @@ console.log(isAvgWhole([1, 2, 3, 4]));
 console.log(isAvgWhole([1, 5, 6]));
 console.log(isAvgWhole([1, 1, 1]));
 console.log(isAvgWhole([9, 2, 2, 5]));
+
+// Absolute Sum
+getAbsSum = (a) => {
+  let array = a;
+  let result = array.reduce((item, total) => Math.abs(item)+ Math.abs(total));
+  return result;
+}
+console.log(getAbsSum([2, -1, 4, 8, 10]));
+console.log(getAbsSum([-3, -4, -10, -2, -3]));
+console.log(getAbsSum([2, 4, 6, 8, 10]));
