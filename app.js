@@ -1335,14 +1335,14 @@ console.log(getAbsSum([-3, -4, -10, -2, -3]));
 console.log(getAbsSum([2, 4, 6, 8, 10]));
 
 // Drop the First Elements of an Array
-  drop = (a, b) => {
-    const array = a;
-    return array.splice(b, 100);
-   }
-   console.log(drop([1, 2, 3], 1));
-   console.log(drop([1, 2, 3], 2));
-   console.log(drop([1, 2, 3], 5));
-   console.log(drop([1, 2, 3], 0));
+drop = (a, b) => {
+  const array = a;
+  return array.splice(b, 100);
+  }
+console.log(drop([1, 2, 3], 1));
+console.log(drop([1, 2, 3], 2));
+console.log(drop([1, 2, 3], 5));
+console.log(drop([1, 2, 3], 0));
    
    //  Upvotes vs Downvotes  
    getVoteCount = (a) => {
@@ -1362,3 +1362,14 @@ console.log(getAbsSum([2, 4, 6, 8, 10]));
     upvote: 10,
     downvote: 33
    }));
+
+   // Reverse the number
+   
+   const reverseNumber = (number) => {
+    return number.toString().split('')
+     .reverse()
+     .join('');
+   }
+   
+   console.log(reverseNumber(12345));
+   console.log(reverseNumber(173939));
