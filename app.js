@@ -1286,3 +1286,11 @@ myPi = (a) => {
 console.log(myPi(2));
 console.log(myPi(5));
 console.log(myPi(15));
+
+// Recursion to Repeat a String n Number of Times
+repetition = (a, b) => {
+  return a.repeat(b);
+}
+console.log(repetition("ab", 3));
+console.log(repetition("kiwi", 1));
+console.log(repetition("cherry", 2));
