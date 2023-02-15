@@ -1294,3 +1294,14 @@ repetition = (a, b) => {
 console.log(repetition("ab", 3));
 console.log(repetition("kiwi", 1));
 console.log(repetition("cherry", 2));
+
+// Burglary Series (10): Calculate Difference
+calculateDifference = (a, b) => {
+  let array = Object.values(a);
+  let add = array.reduce((item, total) => item + total);
+  let result = add - b;
+  return result;
+}
+console.log(calculateDifference({ "baseball bat": 20 }, 5));
+console.log(calculateDifference({ skate: 10, painting: 20 }, 19));
+console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400));
