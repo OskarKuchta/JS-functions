@@ -1333,3 +1333,32 @@ getAbsSum = (a) => {
 console.log(getAbsSum([2, -1, 4, 8, 10]));
 console.log(getAbsSum([-3, -4, -10, -2, -3]));
 console.log(getAbsSum([2, 4, 6, 8, 10]));
+
+// Drop the First Elements of an Array
+  drop = (a, b) => {
+    const array = a;
+    return array.splice(b, 100);
+   }
+   console.log(drop([1, 2, 3], 1));
+   console.log(drop([1, 2, 3], 2));
+   console.log(drop([1, 2, 3], 5));
+   console.log(drop([1, 2, 3], 0));
+   
+   //  Upvotes vs Downvotes  
+   getVoteCount = (a) => {
+    if (a.upvote > 0) {
+     return a.upvote - a.downvote;
+    }
+   }
+   console.log(getVoteCount({
+    upvote: 13,
+    downvote: 2
+   }));
+   console.log(getVoteCount({
+    upvote: 126,
+    downvote: 126
+   }));
+   console.log(getVoteCount({
+    upvote: 10,
+    downvote: 33
+   }));
