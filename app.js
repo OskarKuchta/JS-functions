@@ -1312,3 +1312,14 @@ simpleClock = () => {
   document.getElementById("clock").innerHTML = "<b>" + data.toLocaleTimeString() + "</b>";
 }
 setInterval(simpleClock, 1000);
+
+// Is the Average of All Elements a Whole Number?
+isAvgWhole = (a) => {
+  let result = Number.isInteger((a.reduce((item, total) => item + total) / a.length));
+return result;
+}
+console.log(isAvgWhole([1, 3]));
+console.log(isAvgWhole([1, 2, 3, 4]));
+console.log(isAvgWhole([1, 5, 6]));
+console.log(isAvgWhole([1, 1, 1]));
+console.log(isAvgWhole([9, 2, 2, 5]));
