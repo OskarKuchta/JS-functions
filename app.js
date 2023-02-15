@@ -1278,3 +1278,11 @@ highestDigit = (a) => {
 console.log(highestDigit(379));
 console.log(highestDigit(2));
 console.log(highestDigit(377401));
+
+// Pi to N Decimal Places
+myPi = (a) => {
+  return Math.PI.toFixed(a);
+}
+console.log(myPi(2));
+console.log(myPi(5));
+console.log(myPi(15));
