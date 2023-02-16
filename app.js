@@ -1354,24 +1354,37 @@ console.log(getVoteCount({upvote: 13,downvote: 2}));
 console.log(getVoteCount({upvote: 126,downvote: 126}));
 console.log(getVoteCount({upvote: 10,downvote: 33}));
 
-   // Reverse the number
+// Reverse the number
    
-   const reverseNumber = (number) => {
-    return number.toString().split('')
-     .reverse()
-     .join('');
-   }
-   
-   console.log(reverseNumber(12345));
-   console.log(reverseNumber(173939));
+reverseNumber = (number) => {
+  return number.toString().split('')
+    .reverse()
+    .join('');
+}
+console.log(reverseNumber(12345));
+console.log(reverseNumber(173939));
 
-   // Recursion: Factorials
-   factorial = (a) => {
+// Recursion: Factorials
+  factorial = (a) => {
     for(let i = a - 1; i >= 1; i--){
       a = a * i;
     }
     return a;
-   }
-   console.log(factorial(5));
-   console.log(factorial(3));
-   console.log(factorial(1));
+}
+console.log(factorial(5));
+console.log(factorial(3));
+console.log(factorial(1));
+
+// Sort Numbers in Ascending Order
+sortNumsAscending = (a) => {
+let check = a;
+if(a === null || a === []) {
+  return [];
+}
+let sortingArray = check.sort((item,second) => {return item - second});
+return sortingArray;
+}
+console.log(sortNumsAscending([1, 2, 10, 50, 5]));
+console.log(sortNumsAscending([80, 29, 4, -95, -24, 85]));
+console.log(sortNumsAscending(null));
+console.log(sortNumsAscending([]));
