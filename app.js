@@ -1400,3 +1400,12 @@ bomb = (a) => {
 console.log(bomb("There is a bomb."));
 console.log(bomb("Hey, did you think there is a bomb?"));
 console.log(bomb("This goes boom!!!"));
+
+// Remove Every Vowel from a String
+removeVowels = (a) => {
+  let filtering = a.match(/[^aeiou]/g);
+  return filtering.join('');
+}
+console.log(removeVowels("I have never seen a thin person drinking Diet Coke."));
+console.log(removeVowels("We're gonna build a wall!"));
+console.log(removeVowels("Happy Thanksgiving to all--even the haters and losers!"));
