@@ -1364,3 +1364,14 @@ console.log(getVoteCount({upvote: 10,downvote: 33}));
    
    console.log(reverseNumber(12345));
    console.log(reverseNumber(173939));
+
+   // Recursion: Factorials
+   factorial = (a) => {
+    for(let i = a - 1; i >= 1; i--){
+      a = a * i;
+    }
+    return a;
+   }
+   console.log(factorial(5));
+   console.log(factorial(3));
+   console.log(factorial(1));
