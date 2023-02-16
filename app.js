@@ -1409,3 +1409,13 @@ removeVowels = (a) => {
 console.log(removeVowels("I have never seen a thin person drinking Diet Coke."));
 console.log(removeVowels("We're gonna build a wall!"));
 console.log(removeVowels("Happy Thanksgiving to all--even the haters and losers!"));
+
+// Return the Index of the First Vowel
+firstVowel = (a) => {
+  let search = a.match(/[aeiou]/i);
+  return search.index;
+}
+console.log(firstVowel("apple"));
+console.log(firstVowel("hello"));
+console.log(firstVowel("STRAWBERRY"));
+console.log(firstVowel("pInEaPPLe"));
