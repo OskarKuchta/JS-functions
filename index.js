@@ -1450,3 +1450,20 @@ countTrue = (a) => {
 console.log(countTrue([true, false, false, true, false]));
 console.log(countTrue([false, false, false, false]));
 console.log(countTrue([]));
+
+// A Redundant Function
+Closures = () => {
+f1 = () => {
+  return "apple";
+}
+f2 = () => {
+  return "pear"
+}
+f3 = () => {
+  return " ";
+}
+}
+Closures();
+console.log(f1());
+console.log(f2());
+console.log(f3());
