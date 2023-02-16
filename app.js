@@ -1436,3 +1436,17 @@ mean = (a) => {
 console.log(mean([1, 0, 4, 5, 2, 4, 1, 2, 3, 3, 3]));
 console.log(mean([2, 3, 2, 3]));
 console.log(mean([3, 3, 3, 3, 3]));
+
+// How Much is True?
+countTrue = (a) => {
+  let arr = a;
+  let str = arr.join(' ');
+  let searchingTrue = str.match(/true/g);
+  if(searchingTrue) {
+    return searchingTrue.length;
+  }
+  return 0;
+}
+console.log(countTrue([true, false, false, true, false]));
+console.log(countTrue([false, false, false, false]));
+console.log(countTrue([]));
