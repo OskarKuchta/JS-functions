@@ -1419,3 +1419,11 @@ console.log(firstVowel("apple"));
 console.log(firstVowel("hello"));
 console.log(firstVowel("STRAWBERRY"));
 console.log(firstVowel("pInEaPPLe"));
+
+// Is it True?
+isTrue = (a) => {
+  return eval(a.replace("=", "==="));
+}
+console.log(isTrue("2=2"));
+console.log(isTrue("8<7"));
+console.log(isTrue("5=13"));
