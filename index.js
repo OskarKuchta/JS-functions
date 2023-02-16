@@ -1467,3 +1467,10 @@ Closures();
 console.log(f1());
 console.log(f2());
 console.log(f3());
+
+// RegEx Exercise: An empty string
+matchReg = () => {
+  let str = "";
+  return str.length === 0 ? true : false;
+}
+console.log(matchReg());
