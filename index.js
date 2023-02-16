@@ -1474,3 +1474,11 @@ matchReg = () => {
   return str.length === 0 ? true : false;
 }
 console.log(matchReg());
+
+// Tile Teamwork Tactics
+possibleBonus = (a,b) => {
+  return (b - a) <= 6 && (b - a) > 0;
+}
+console.log(possibleBonus(3,7));
+console.log(possibleBonus(1,9));
+console.log(possibleBonus(5,3));
