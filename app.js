@@ -1427,3 +1427,12 @@ isTrue = (a) => {
 console.log(isTrue("2=2"));
 console.log(isTrue("8<7"));
 console.log(isTrue("5=13"));
+
+// Calculate the Mean 
+mean = (a) => {
+ let sum =  a.reduce((item,total) => (item + total));
+ return (sum / a.length).toFixed(2);
+}
+console.log(mean([1, 0, 4, 5, 2, 4, 1, 2, 3, 3, 3]));
+console.log(mean([2, 3, 2, 3]));
+console.log(mean([3, 3, 3, 3, 3]));
