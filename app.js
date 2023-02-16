@@ -1388,3 +1388,15 @@ console.log(sortNumsAscending([1, 2, 10, 50, 5]));
 console.log(sortNumsAscending([80, 29, 4, -95, -24, 85]));
 console.log(sortNumsAscending(null));
 console.log(sortNumsAscending([]));
+
+// Find the Bomb
+bomb = (a) => {
+  let check = a.match(/bomb/gi);
+  if(check) {
+    return "Duck!!!";
+  }
+  return "There is no bomb, relax.";
+}
+console.log(bomb("There is a bomb."));
+console.log(bomb("Hey, did you think there is a bomb?"));
+console.log(bomb("This goes boom!!!"));
