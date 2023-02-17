@@ -1567,3 +1567,18 @@ concat = (a) => {
  console.log(concat([[1, 2, 3],[4, 5],[6, 7]]));
  console.log(concat([[1],[2],[3],[4],[5],[6],[7]]));
  console.log(concat([4, 4, 4, 4, 4]));
+
+ // All About Anonymous Functions: Adding Suffixes
+addText = (a) => {
+  add_ly = (b) => {
+   return b + "ly";
+  }
+  add_less = (c) => {
+   return c + "less";
+  }
+ }
+ addText();
+ console.log(add_ly("hopeless"));
+ console.log(add_ly("total"));
+ console.log(add_less("fear"));
+ console.log(add_less("ruth"));
