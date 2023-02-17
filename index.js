@@ -1539,3 +1539,14 @@ compact = (a) => {
   false, 2, "", 3
  ]));
  
+ // Function Factory
+plusFive = (a) => {
+  return a + 5;
+ }
+ plusTen = (b) => {
+  return b + 10;
+ }
+ console.log(plusFive(2));
+ console.log(plusFive(-8));
+ console.log(plusTen(0));
+ console.log(plusFive(plusTen(0)));
