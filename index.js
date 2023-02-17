@@ -1482,3 +1482,12 @@ possibleBonus = (a,b) => {
 console.log(possibleBonus(3,7));
 console.log(possibleBonus(1,9));
 console.log(possibleBonus(5,3));
+
+// Derivative of a Function
+derivative = (a, b) => {
+  return a * b ** (a - 1);
+ }
+ console.log(derivative(1, 4));
+ console.log(derivative(3, -2));
+ console.log(derivative(4, -3));
+ 
