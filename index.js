@@ -1530,3 +1530,12 @@ tetra = (a) => {
  console.log(tetra(2));
  console.log(tetra(5));
  console.log(tetra(6));
+
+ // Learn Lodash (2): Compact
+compact = (a) => {
+  return a.filter(Boolean);
+ }
+ console.log(compact([0, 1,
+  false, 2, "", 3
+ ]));
+ 
