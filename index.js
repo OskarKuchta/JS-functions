@@ -1522,3 +1522,11 @@ generation = (a, b) => {
  console.log(generation(2, "f"));
  console.log(generation(-3, "m"));
  console.log(generation(1, "f"));
+
+ // Find the nth Tetrahedral Number
+tetra = (a) => {
+  return (a * (a + 1) * (a + 2)) / 6;
+ }
+ console.log(tetra(2));
+ console.log(tetra(5));
+ console.log(tetra(6));
