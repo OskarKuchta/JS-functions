@@ -1558,3 +1558,12 @@ toArray = (a) => {
  console.log(toArray({a: 1,b: 2}));
  console.log(toArray({shrimp: 15,tots: 12}))
  console.log(toArray({}));
+
+ // Concatenate Variable Number of Input Arrays
+concat = (a) => {
+  let result = a;
+  return result.flatMap(word => word);
+ }
+ console.log(concat([[1, 2, 3],[4, 5],[6, 7]]));
+ console.log(concat([[1],[2],[3],[4],[5],[6],[7]]));
+ console.log(concat([4, 4, 4, 4, 4]));
