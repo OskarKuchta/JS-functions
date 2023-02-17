@@ -1491,3 +1491,34 @@ derivative = (a, b) => {
  console.log(derivative(3, -2));
  console.log(derivative(4, -3));
  
+// Which Generation Are You?
+generation = (a, b) => {
+  let number = a;
+  if (b === "m") {
+   let objM = {
+    1: "son",
+    2: "grandson",
+    3: "great grandson",
+    0: "me!",
+    "-1": "father",
+    "-2": "grandfather",
+    "-3": "great grandfather"
+   }
+   return objM[number];
+  }
+  if (b === "f") {
+   let objF = {
+    1: "daughter",
+    2: "granddaughter",
+    3: "great granddaughter",
+    0: "me!",
+    "-1": "mother",
+    "-2": "grandmother",
+    "-3": "great grandmother"
+   }
+   return objF[number];
+  }
+ }
+ console.log(generation(2, "f"));
+ console.log(generation(-3, "m"));
+ console.log(generation(1, "f"));
