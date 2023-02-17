@@ -1550,3 +1550,11 @@ plusFive = (a) => {
  console.log(plusFive(-8));
  console.log(plusTen(0));
  console.log(plusFive(plusTen(0)));
+
+// Converting Objects to Arrays
+toArray = (a) => {
+  return Object.entries(a);
+ }
+ console.log(toArray({a: 1,b: 2}));
+ console.log(toArray({shrimp: 15,tots: 12}))
+ console.log(toArray({}));
