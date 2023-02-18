@@ -1590,3 +1590,20 @@ triangle = (a) => {
  console.log(triangle(1));
  console.log(triangle(6));
  console.log(triangle(215));
+
+ // Make a Circle with OOP
+class Circle {
+  constructor(radius) {
+   this.radius = radius;
+  }
+  getArea = (a) => {
+   return Math.PI * (this.radius ** 2);
+  }
+  getPerimeter = (b) => {
+   return Math.PI * 2 * this.radius;
+  }
+ }
+ let circy = new Circle(11);
+ console.log(circy.getArea().toFixed(2));
+ circy = new Circle(4.44);
+ console.log(circy.getPerimeter().toFixed(2));
