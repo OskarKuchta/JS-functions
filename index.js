@@ -1582,3 +1582,11 @@ addText = (a) => {
  console.log(add_ly("total"));
  console.log(add_less("fear"));
  console.log(add_less("ruth"));
+
+ // Triangular Number Sequence
+triangle = (a) => {
+  return a * (a + 1) / 2
+ }
+ console.log(triangle(1));
+ console.log(triangle(6));
+ console.log(triangle(215));
