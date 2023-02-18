@@ -1607,3 +1607,11 @@ class Circle {
  console.log(circy.getArea().toFixed(2));
  circy = new Circle(4.44);
  console.log(circy.getPerimeter().toFixed(2));
+
+ // Convenience Store
+changeEnough = (a, b) => {
+  return (a[0] * 0.25 + a[1] * 0.1 + a[2] * 0.05 + a[3] * 0.01) >= b;
+ }
+ console.log(changeEnough([2, 100, 0, 0], 14.11));
+ console.log(changeEnough([0, 0, 20, 5], 0.75));
+ console.log(changeEnough([30, 40, 20, 5], 12.55));
