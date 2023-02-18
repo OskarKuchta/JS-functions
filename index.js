@@ -1615,3 +1615,15 @@ changeEnough = (a, b) => {
  console.log(changeEnough([2, 100, 0, 0], 14.11));
  console.log(changeEnough([0, 0, 20, 5], 0.75));
  console.log(changeEnough([30, 40, 20, 5], 12.55));
+
+ // Array of Multiples
+arrayOfMultiples = (a, b) => {
+  let arr = [];
+  for (let i = 1; i <= b; i++) {
+   arr.push(i * a);
+  }
+  return arr;
+ }
+ console.log(arrayOfMultiples(7, 5));
+ console.log(arrayOfMultiples(12,10));
+ console.log(arrayOfMultiples(17, 6));
