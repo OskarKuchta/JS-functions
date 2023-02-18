@@ -1637,5 +1637,13 @@ keysAndValues = (a) => {
  }
  console.log(keysAndValues({a: 1, b: 2, c: 3}));
  console.log(keysAndValues({a: "Apple", b: "Microsoft", c: "Google"}));
- console.log(
-  keysAndValues({key1: true,key2: false,key3: undefined}));
+ console.log(keysAndValues({key1: true,key2: false,key3: undefined}));
+
+ // Front 3 - Slice Check Repeat Concatenate
+frontThree = (a) => {
+  let s = a.slice(0, 3);
+  return s + s + s;
+}
+console.log(frontThree("Python"));
+console.log(frontThree("Cucumber"));
+console.log(frontThree("bioshock"));
