@@ -1627,3 +1627,15 @@ arrayOfMultiples = (a, b) => {
  console.log(arrayOfMultiples(7, 5));
  console.log(arrayOfMultiples(12,10));
  console.log(arrayOfMultiples(17, 6));
+
+ // Return the Objects Keys and Values
+keysAndValues = (a) => {
+  let arr = [];
+  arr.push(Object.keys(a));
+  arr.push(Object.values(a));
+  return arr;
+ }
+ console.log(keysAndValues({a: 1, b: 2, c: 3}));
+ console.log(keysAndValues({a: "Apple", b: "Microsoft", c: "Google"}));
+ console.log(
+  keysAndValues({key1: true,key2: false,key3: undefined}));
