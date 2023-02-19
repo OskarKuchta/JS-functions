@@ -1659,15 +1659,27 @@ console.log(sumArray([1, 2, 3, 4, 5]));
 console.log(sumArray([-1, 0, 1]));
 console.log(sumArray([0, 4, 8, 12]));
 
-
-// Summary Array
-sumArray = (a) => {
-  let sum = a.reduce(summary = (a, b) => {
-     return a + b
-    });
-    return sum;
+// Search number in array
+findInArray = (number) => {
+let found = false;
+const arr = [
+  [1, 2, 7],
+  [27, 37, 45],
+  [62, 71, 92]
+ ];
+arr.forEach(innerArray => {
+  if (innerArray.indexOf(number) !==-1) {
+    found = true;
+    return found;
+  }
+})
+return found;
 }
-console.log(sumArray([1, 2, 3, 4, 5]));
-console.log(sumArray([-1, 0, 1]));
-console.log(sumArray([0, 4, 8, 12]));
+console.log(findInArray(92));
+console.log(findInArray(0));
+console.log(findInArray(27));
+
+
+
+
    
