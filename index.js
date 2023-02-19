@@ -1735,6 +1735,16 @@ console.log(perimeter("s", 7));
 console.log(perimeter("c", 4));
 console.log(perimeter("c", 9));
 
+// Find Number of Digits in Number 
+num_of_digits = (a) => {
+  let check = a.toString().split('');
+    return check.length;
+}
+console.log(num_of_digits(1000));
+console.log(num_of_digits(12));
+console.log(num_of_digits(1305981031));
+console.log(num_of_digits(0));
+
 
 
    
