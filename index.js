@@ -1679,6 +1679,15 @@ console.log(findInArray(92));
 console.log(findInArray(0));
 console.log(findInArray(27));
 
+// Even All the Way 
+getOnlyEvens = (a) => {
+  let arr = a;
+  let result = arr.filter((item, index) => item % 2 === 0 && index % 2 === 0);
+   return result;
+}
+console.log(getOnlyEvens([1, 3, 2, 6, 4, 8]));
+console.log(getOnlyEvens([0, 1, 2, 3, 4]));
+console.log(getOnlyEvens([1, 2, 3, 4, 5]));
 
 
 
