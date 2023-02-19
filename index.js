@@ -1725,6 +1725,16 @@ console.log(shiftToRight(4666, 6));
 console.log(shiftToRight(3777, 6));
 console.log(shiftToRight(-512,10));
 
+// Perimeters with a Catch
+perimeter = (l,num) => {
+  let s = 4;
+  let c = 6.28;
+  return l === "s" ? 4 * num : 6.28 * num;
+}
+console.log(perimeter("s", 7));
+console.log(perimeter("c", 4));
+console.log(perimeter("c", 9));
+
 
 
    
