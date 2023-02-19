@@ -1702,6 +1702,16 @@ console.log(countVowels("Celebration"));
 console.log(countVowels("Palm"));
 console.log(countVowels("Prediction"));
 
+// Check If It's a Title String
+checkTitle = (a) => {
+  let arr = a.split(" ");
+  let result = arr.every((item) => item[0] === item[0].toUpperCase())
+    return result;
+}
+console.log(checkTitle("A Mind Boggling Achievement"));
+console.log(checkTitle("A Simple Java Script Program!"));
+console.log(checkTitle("Water is transparent"));
+
 
 
    
