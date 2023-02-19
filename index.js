@@ -1689,6 +1689,19 @@ console.log(getOnlyEvens([1, 3, 2, 6, 4, 8]));
 console.log(getOnlyEvens([0, 1, 2, 3, 4]));
 console.log(getOnlyEvens([1, 2, 3, 4, 5]));
 
+// How Many Vowels?
+countVowels = (a) => {
+  return a.match(/[aeiou]/gi).length;
+   /* let text = a;
+    let regexp = /[aeiou]/gi;
+    let result = text.match(regexp);
+    return result.length;
+    */
+}
+console.log(countVowels("Celebration"));
+console.log(countVowels("Palm"));
+console.log(countVowels("Prediction"));
+
 
 
    
