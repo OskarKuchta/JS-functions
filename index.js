@@ -1658,3 +1658,16 @@ sumArray = (a) => {
 console.log(sumArray([1, 2, 3, 4, 5]));
 console.log(sumArray([-1, 0, 1]));
 console.log(sumArray([0, 4, 8, 12]));
+
+
+// Summary Array
+sumArray = (a) => {
+  let sum = a.reduce(summary = (a, b) => {
+     return a + b
+    });
+    return sum;
+}
+console.log(sumArray([1, 2, 3, 4, 5]));
+console.log(sumArray([-1, 0, 1]));
+console.log(sumArray([0, 4, 8, 12]));
+   
