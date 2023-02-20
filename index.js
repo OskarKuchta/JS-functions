@@ -1794,6 +1794,21 @@ objectToArray = (a) => {
  console.log(count(-49427));
  console.log(count(5482));
 
+ // Is the Number a Repdigit
+ isRepdigit = (a) => {
+  if (a >= 0) {
+   let result = String(a).split("");
+   if (result[0] === result[1] ||
+    result[0] == 0) {
+    return true;
+   }
+  }
+  return false;
+ }
+ console.log(isRepdigit(66));
+ console.log(isRepdigit(65));
+ console.log(isRepdigit(0));
+ console.log(isRepdigit(-11));
  
 
    
