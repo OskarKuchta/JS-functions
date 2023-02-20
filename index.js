@@ -1784,6 +1784,16 @@ objectToArray = (a) => {
    console.log(reverseWords("hello   world!  "));
    console.log(reverseWords("a good example"));
    
+   //  Integer Digits Count
+ count = (a) => {
+  let conversion = String(a).match(
+   /[0-9]/gi);
+  return conversion.length;
+ }
+ console.log(count(318));
+ console.log(count(-49427));
+ console.log(count(5482));
+
  
 
    
