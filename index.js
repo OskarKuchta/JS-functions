@@ -1821,7 +1821,7 @@ objectToArray = (a) => {
 
 // Find the Largest Numbers in a Group of Arrays
  findLargestNums = (a) => {
- let check = a;
+ return a.map(item => {return Math.max(...item)});
  }
 console.log(findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
 console.log(findLargestNums([[-34, -54, -74], [-32, -2, -65], [-54, 7, -43]]));
