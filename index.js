@@ -1757,5 +1757,24 @@ console.log(addName({}, "Brutus", 300));
 console.log(addName({ piano: 500 }, "Brutus", 400));
 console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440));
 
+// Convert Key, Values in an Object to Array
+objectToArray = (a) => {
+  return Object.entries(a);
+ }
+ console.log(objectToArray({D: 1,B: 2,C: 3}));
+ console.log(objectToArray({likes: 2,dislikes: 3,followers: 10}));
+ 
+ // Integer in Range?
+ intWithinBounds = (a, l, h) => {
+  if (a * a <= h && a * a >= l) {
+   return true;
+  }
+  return false;
+ }
+ console.log(intWithinBounds(3, 1, 9));
+ console.log(intWithinBounds(6, 1, 6));
+ console.log(intWithinBounds(4.5, 3,
+  8));
+ 
 
    
