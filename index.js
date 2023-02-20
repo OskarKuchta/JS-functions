@@ -1811,4 +1811,13 @@ objectToArray = (a) => {
  console.log(isRepdigit(-11));
  
 
+ // Even Number?
+ evenNumber = (a) => {
+  return a % 2 === 0;
+ }
+ console.log(evenNumber("431"));
+ console.log(evenNumber("132"));
+ console.log(evenNumber("29"));
+
+
    
