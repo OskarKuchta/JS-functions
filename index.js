@@ -1745,6 +1745,17 @@ console.log(num_of_digits(12));
 console.log(num_of_digits(1305981031));
 console.log(num_of_digits(0));
 
+// Burglary Series (04): Add its Name
+addName = (a, b, c) => {
+  let obj = a;
+  let name = b;
+  let obj2 = {[name]: c};
+  let result = Object.assign(obj, obj2);
+    return result;
+}
+console.log(addName({}, "Brutus", 300));
+console.log(addName({ piano: 500 }, "Brutus", 400));
+console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440));
 
 
    
