@@ -1909,3 +1909,10 @@ console.log(Scrable([
   { tile: "U", score: 1 }
 ]));
 
+// Sort Numbers in Descending Order
+sortDescending = (a) => {
+  return String(a).split("").sort((item, itemTwo) => itemTwo - item).join("");
+}
+console.log(sortDescending(123));
+console.log(sortDescending(1254859723));
+console.log(sortDescending(73065));
