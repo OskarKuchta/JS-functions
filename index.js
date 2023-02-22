@@ -1865,3 +1865,15 @@ console.log(flatten([[1, 2], [3, 4]]));
 console.log(flatten([["a", "b"], ["c", "d"]]));
 console.log(flatten([[true, false], [false, false]]));
 
+// Travelling Salesman Problem
+paths = (a) => {
+  let roads = 1;
+  let num = a;
+  for (let i = 1; i <= num; i++) {
+    roads *= i;
+  }
+  return roads;
+}
+console.log(paths(4)); // 24 // 3 = 6
+console.log(paths(1)); // 1
+console.log(paths(9)); //362880
