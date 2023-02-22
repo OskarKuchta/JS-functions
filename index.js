@@ -1855,3 +1855,13 @@ console.log(checkEquals([1, 2], [1, 3]));
 console.log(checkEquals([1, 2], [1, 2]));
 console.log(checkEquals([4, 5, 6], [4, 5, 6]));
 console.log(checkEquals([4, 7, 6], [4, 5, 6]));
+
+// Flattening an Array
+flatten = (a) => {
+  let result = a.flatMap(item => item);
+  return result;
+}
+console.log(flatten([[1, 2], [3, 4]]));
+console.log(flatten([["a", "b"], ["c", "d"]]));
+console.log(flatten([[true, false], [false, false]]));
+
