@@ -1877,3 +1877,9 @@ paths = (a) => {
 console.log(paths(4)); // 24 // 3 = 6
 console.log(paths(1)); // 1
 console.log(paths(9)); //362880
+
+// Returning an "Add" Function
+add = (x) => (y) => x + y;
+console.log(add(10)(20));
+console.log(add(0)(20));
+console.log(add(-30)(80));
