@@ -1835,3 +1835,12 @@ sortIt = (a) => {
 console.log(sortIt([4, 1, 3]));
 console.log(sortIt([[4], [1], [3]]));
 console.log(sortIt([[3], 4, [2], [5], 1, 6]));
+
+// Remove Trailing and Leading Zeros
+removeLeadingTrailing = (a) => {
+  return parseFloat(a);
+}
+console.log(removeLeadingTrailing("230.000"));
+console.log(removeLeadingTrailing("00402"));
+console.log(removeLeadingTrailing("03.1400"));
+console.log(removeLeadingTrailing("30"));
