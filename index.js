@@ -1825,6 +1825,13 @@ objectToArray = (a) => {
  }
 console.log(findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
 console.log(findLargestNums([[-34, -54, -74], [-32, -2, -65], [-54, 7, -43]]));
-console.log(findLargestNums([[0.4321, 0.7634, 0.652], [1.324, 9.32, 2.5423,4314], [9, 3, 6, 3]]));
+console.log(findLargestNums([[0.4321, 0.7634, 0.652], [1.324, 9.32, 2.5423,4.314], [9, 3, 6, 3]]));
 
-   
+// Sort the Unsortable
+sortIt = (a) => {
+  return a.sort((item, item2) =>
+    item - item2);
+}
+console.log(sortIt([4, 1, 3]));
+console.log(sortIt([[4], [1], [3]]));
+console.log(sortIt([[3], 4, [2], [5], 1, 6]));
