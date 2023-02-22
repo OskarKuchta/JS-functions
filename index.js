@@ -1844,3 +1844,14 @@ console.log(removeLeadingTrailing("230.000"));
 console.log(removeLeadingTrailing("00402"));
 console.log(removeLeadingTrailing("03.1400"));
 console.log(removeLeadingTrailing("30"));
+
+//  Value vs. Reference Types
+checkEquals = (a, b) => {
+  let first = String(a);
+  let second = String(b);
+  return first === second;
+}
+console.log(checkEquals([1, 2], [1, 3]));
+console.log(checkEquals([1, 2], [1, 2]));
+console.log(checkEquals([4, 5, 6], [4, 5, 6]));
+console.log(checkEquals([4, 7, 6], [4, 5, 6]));
