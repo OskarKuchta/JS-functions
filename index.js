@@ -1944,3 +1944,12 @@ coneVolume = (a, b) => {
 console.log(coneVolume(3, 2));
 console.log(coneVolume(15, 6));
 console.log(coneVolume(18, 0));
+
+// Is it an Object?
+isObject = (a) => {
+  return a instanceof Object;
+}
+console.log(isObject(function add(x,y) {return x + y}));
+console.log(isObject(new RegExp('^[a-zA-Z0-9]+$', 'g')));
+console.log(isObject(null));
+console.log(isObject(""));
