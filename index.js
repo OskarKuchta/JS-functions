@@ -1953,3 +1953,14 @@ console.log(isObject(function add(x,y) {return x + y}));
 console.log(isObject(new RegExp('^[a-zA-Z0-9]+$', 'g')));
 console.log(isObject(null));
 console.log(isObject(""));
+
+// Get the Area of a Country
+areaOfCountry = (a, b) => {
+  let total = 148940000;
+  let percent = (b / total * 100).toFixed(2) + "%";
+
+  return a + " is " + percent + " of the total world's landmass";
+}
+console.log(areaOfCountry("Russia", 17098242));
+console.log(areaOfCountry("USA", 9372610));
+console.log(areaOfCountry("Iran", 1648195));
