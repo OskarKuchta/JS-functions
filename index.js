@@ -1916,3 +1916,12 @@ sortDescending = (a) => {
 console.log(sortDescending(123));
 console.log(sortDescending(1254859723));
 console.log(sortDescending(73065));
+
+// Find the Second Largest Number
+secondLargest = (a) => {
+  let sorting = a.sort((item, itemTwo) => item - itemTwo);
+  return sorting[sorting.length - 2];
+}
+console.log(secondLargest([10, 40, 30, 20, 50]));
+console.log(secondLargest([25, 143, 89, 13, 105]));
+console.log(secondLargest([54, 23, 11, 17, 10]));
