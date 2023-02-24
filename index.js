@@ -1933,3 +1933,14 @@ calculator = (a, b, c) => {
 console.log(calculator(2, "+", 2));
 console.log(calculator(2, "*", 2));
 console.log(calculator(4, "/", 2));
+
+// Volume of a Cone
+coneVolume = (a, b) => {
+  if(b !== 0) {
+    return ((Math.PI * (b ** 2) * a) / 3).toFixed(2);
+  }
+  return 0;
+}
+console.log(coneVolume(3, 2));
+console.log(coneVolume(15, 6));
+console.log(coneVolume(18, 0));
