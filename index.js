@@ -1964,3 +1964,11 @@ areaOfCountry = (a, b) => {
 console.log(areaOfCountry("Russia", 17098242));
 console.log(areaOfCountry("USA", 9372610));
 console.log(areaOfCountry("Iran", 1648195));
+
+// Square Every Digit
+squareDigits = (a) => {
+  return a.toString().split("").map(item => item ** 2).join("");
+}
+console.log(squareDigits(9119));
+console.log(squareDigits(2483));
+console.log(squareDigits(3212));
