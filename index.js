@@ -1925,3 +1925,11 @@ secondLargest = (a) => {
 console.log(secondLargest([10, 40, 30, 20, 50]));
 console.log(secondLargest([25, 143, 89, 13, 105]));
 console.log(secondLargest([54, 23, 11, 17, 10]));
+
+// Basic Calculator
+calculator = (a, b, c) => {
+ return c !== 0 ? eval(a + b + c) : "Can't divide by 0!";
+}
+console.log(calculator(2, "+", 2));
+console.log(calculator(2, "*", 2));
+console.log(calculator(4, "/", 2));
