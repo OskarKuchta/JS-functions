@@ -1990,3 +1990,14 @@ asciiCapitalize = (a) => {
 console.log(asciiCapitalize("to be or not to be!"));
 console.log(asciiCapitalize("THE LITTLE MERMAID"));
 console.log(asciiCapitalize("Oh what a beautiful morning."));
+
+// Is the Number Symmetrical?
+isSymmetrical = (a) => {
+  let text = a.toString().split("");
+  let reversing = text.reverse().join("");
+  return reversing == a ? true : false;
+}
+console.log(isSymmetrical(7227));
+console.log(isSymmetrical(12567));
+console.log(isSymmetrical(44444444));
+console.log(isSymmetrical(1112111));
