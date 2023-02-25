@@ -1980,3 +1980,13 @@ dis = (a, b) => {
 console.log(dis(1500, 50));
 console.log(dis(89, 20));
 console.log(dis(100, 75));
+
+// Capitalize by ASCII
+asciiCapitalize = (a) => {
+  let convert = a.split("")
+  let check = convert.map(item => item.charCodeAt(0) % 2 === 0 ? item.toUpperCase() : item.toLowerCase()).join("");
+  return check;
+}
+console.log(asciiCapitalize("to be or not to be!"));
+console.log(asciiCapitalize("THE LITTLE MERMAID"));
+console.log(asciiCapitalize("Oh what a beautiful morning."));
