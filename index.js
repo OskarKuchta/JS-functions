@@ -1,5 +1,5 @@
 // Summary two numbers 
-addition = (a,b) => {
+const addition = (a,b) => {
  return a + b;
 }
 console.log(addition(3, 4)); 
@@ -7,7 +7,7 @@ console.log(addition(-3, -6));
 console.log(addition(7, 3));
 
 // Convert minutes to seconds 
-convert = (a) => {
+const convert = (a) => {
  return a *= 60;
 }
 console.log(convert(5));
@@ -15,16 +15,16 @@ console.log(convert(3));
 console.log(convert(2));
 
 // Add one to something number
-addition = (a) => {
+const additionOne = (a) => {
  return a += 1;
 }
 
-console.log(addition(0));
-console.log(addition(9));
-console.log(addition(-3));
+console.log(additionOne(0));
+console.log(additionOne(9));
+console.log(additionOne(-3));
 
 // Area of triangle 
-triArea = (base, height) => {
+const triArea = (base, height) => {
  return (base * height) / 2;
 }
 console.log(triArea(3,2));
@@ -32,7 +32,7 @@ console.log(triArea(7,4));
 console.log(triArea(10,10));
 
 // Convert age to days
-calcAge = (days) => {
+const calcAge = (days) => {
   return days *= 365;
 }
 console.log(calcAge(65));
@@ -40,7 +40,7 @@ console.log(calcAge(0));
 console.log(calcAge(20));
 
 // Cube
-cubes = (a) => {
+const cubes = (a) => {
  return a * a * a;
 }
 console.log(cubes(3));
@@ -48,7 +48,7 @@ console.log(cubes(5));
 console.log(cubes(10));
 
 // First value in array 
-getFirstValue = (a) => {
+const getFirstValue = (a) => {
   return a[0];
 }
 console.log(getFirstValue([1,2,3]));
@@ -56,7 +56,7 @@ console.log(getFirstValue([80,5,100]));
 console.log(getFirstValue([-500, 0, 50]));
 
 // multiplication
-circuitPower = (a,b) => {
+const circuitPower = (a,b) => {
  return a * b;
 }
 console.log(circuitPower(230, 10));
@@ -64,7 +64,7 @@ console.log(circuitPower(110, 3));
 console.log(circuitPower(480, 20));
 
 // How many second in hour   
-howManySeconds = (a) => {
+const howManySeconds = (a) => {
  return a *= 3600;
 }
 console.log(howManySeconds(2));
@@ -72,7 +72,7 @@ console.log(howManySeconds(10));
 console.log(howManySeconds(24));
 
 // Maximum Edge of a Triangle
-nextEdge = (side1, side2) => {
+const nextEdge = (side1, side2) => {
  return (side1 + side2) - 1;
 }
 console.log(nextEdge(8, 10));
@@ -80,7 +80,7 @@ console.log(nextEdge(5, 7));
 console.log(nextEdge(9, 2));
 
 // Remainder from two numbers  
-remainder = (x, y) => {
+const remainder = (x, y) => {
  return x % y;
 }
 console.log(remainder(1, 3));
@@ -89,7 +89,7 @@ console.log(remainder(45, 5));
 console.log(remainder(-9, 45));
 
 // Perimeter of a Rectangle
-findPerimeter = (length, width) => {
+const findPerimeter = (length, width) => {
  return (length * 2) + (width * 2);
 }
 console.log(findPerimeter(6, 7));
@@ -97,7 +97,7 @@ console.log(findPerimeter(20, 10));
 console.log(findPerimeter(2, 9));
 
 // Give me something
-giveMeSomething = (a) => {
+const giveMeSomething = (a) => {
  return '"something ' + a + '"';
 }
 console.log(giveMeSomething("is better than nothing"));
@@ -105,7 +105,7 @@ console.log(giveMeSomething("Bob Jane"));
 console.log(giveMeSomething("something"));
 
 // Squared numbers
-squared = (a) => {
+const squared = (a) => {
  return a *= a;
 }
 console.log(squared(5));
@@ -113,7 +113,7 @@ console.log(squared(9));
 console.log(squared(100));
 
 // Number less than or equal to zero
-lessThanOrEqualToZero = (a) => {
+const lessThanOrEqualToZero = (a) => {
  return a <= 0 ? true : false;
 }
 console.log(lessThanOrEqualToZero(5));
@@ -121,7 +121,7 @@ console.log(lessThanOrEqualToZero(0));
 console.log(lessThanOrEqualToZero(-2));
 
 //Summary angle of polygon
-sumPolygon = (a) => {
+const sumPolygon = (a) => {
  return a > 2 ? (a - 2) * 180 : undefined;
 }
 console.log(sumPolygon(2));
@@ -129,7 +129,7 @@ console.log(sumPolygon(4));
 console.log(sumPolygon(6));
 
 // Multiply with two parameters
-points = (a, b) => {
+const points = (a, b) => {
  return a * 2 + b * 3;
 }
 console.log(points(1, 1));
@@ -137,7 +137,7 @@ console.log(points(7, 5));
 console.log(points(38, 8));
 
 // Basic Variable Assignment
-nameString = (name) => {
+const nameString = (name) => {
  const a = 'Edabit"';
  const result = '"' + name + a;
  return result;
@@ -147,7 +147,7 @@ console.log(nameString("Matt"));
 console.log(nameString("javascript"));
 
 // Compare summary two numbers to another
-lessThan100 = (a, b) => {
+const lessThan100 = (a, b) => {
  return (a + b) < 100 ? true : false;
 }
 console.log(lessThan100(22, 15));
@@ -155,7 +155,7 @@ console.log(lessThan100(83, 34));
 console.log(lessThan100(3, 77));
 
 // Array with increment values
-printArray = (a) => {
+const printArray = (a) => {
     let newArray = [];
     for (i = 1; i <= a; i++) {
      newArray.push(i);
@@ -167,7 +167,7 @@ console.log(printArray(6));
 console.log(printArray(5));
 
 // Swap two numbers in array 
-swap = (a, b) => {
+const swap = (a, b) => {
   return [b, a];
  }
  console.log(swap(100, 200));
@@ -175,7 +175,7 @@ swap = (a, b) => {
  console.log(swap(21, 12));
 
  //Multiply three numbers with different multiplier  
-animals = (chciken, cows, pigs) => {
+const animals = (chciken, cows, pigs) => {
   return (chciken * 2) + (cows * 4) +
    (pigs * 4);
  }
@@ -184,7 +184,7 @@ animals = (chciken, cows, pigs) => {
  console.log(animals(5, 2, 8));
 
  //  && operator  
-and = (a, b) => {
+const and = (a, b) => {
   return a == true && b == true ?
    true : false;
  }
@@ -194,7 +194,7 @@ and = (a, b) => {
  console.log(and(false, false));
 
  // Compare two numbers
-isSameNum = (a, b) => {
+const isSameNum = (a, b) => {
   return a === b ? true : false;
  }
  console.log(isSameNum(4, 8));
@@ -202,7 +202,7 @@ isSameNum = (a, b) => {
  console.log(isSameNum(2, "2"));
  
  // Football Points  
-footballPoints = (wins, draw,
+const footballPoints = (wins, draw,
   losses) => {
   let allow = wins && draw && losses <
    0;
@@ -214,16 +214,16 @@ footballPoints = (wins, draw,
  console.log(footballPoints(0, 0, 1));
 
  // Convert hours and minutes to seconds
-convert = (hours, minutes) => {
+const convertHr = (hours, minutes) => {
   return (hours *= 3600) + (minutes *=
    60);
  }
- console.log(convert(1, 3));
- console.log(convert(2, 0));
- console.log(convert(0, 0));
+ console.log(convertHr(1, 3));
+ console.log(convertHr(2, 0));
+ console.log(convertHr(0, 0));
 
  // Number equal to seven  
-isSeven = (x) => {
+const isSeven = (x) => {
   return x === 7 ? true : false;
  }
  console.log(isSeven(4));
@@ -231,7 +231,7 @@ isSeven = (x) => {
  console.log(isSeven(7));
  
 // Equal parameters typeof
-checkEquality = (a, b) => {
+const checkEquality = (a, b) => {
   return typeof a === typeof b ? true :
     false;
    }
@@ -240,7 +240,7 @@ checkEquality = (a, b) => {
   console.log(checkEquality(0, "0"));
    
 // Profitable Gamble
-profitableGamble = (prob, prize,
+const profitableGamble = (prob, prize,
   pay) => {
   return prob * prize > pay ? true :
     false;
@@ -252,16 +252,16 @@ profitableGamble = (prob, prize,
   console.log(profitableGamble(0.9, 3,
     2));
 
-    // Boolean to String Conversion
-   boolToString = (flag) => {
+// Boolean to String Conversion
+const boolToString = (flag) => {
     return typeof flag === "boolean" ? 
     '"' + flag + '"' : null;
    }
    console.log(boolToString(true));
    console.log(boolToString(false));
 
-  // Using Arrow Function 
-  arrowFunc = (a) => {
+  // Using Arrow Function
+const arrowFunc = (a) => {
     return typeof a === "string" ? '"' +
     a + '"' : a;
   }
@@ -269,33 +269,33 @@ profitableGamble = (prob, prize,
   console.log(arrowFunc("3"));
   console.log(arrowFunc(true));
   
-  // Parody of a Calculator (not recommended convert string to number)
-  calculator = (a) => {
+// Parody of a Calculator (not recommended convert string to number)
+const calculator = (a) => {
     return eval(a);
-  }
-  console.log(calculator("23 + 4"));
-  console.log(calculator("45-15"));
-  console.log(calculator("49/7*2-3"));
+}
+console.log(calculator("23 + 4"));
+console.log(calculator("45-15"));
+console.log(calculator("49/7*2-3"));
 
-  // Two Makes Ten  
-  makesTen = (a, b) => {
-    return (a + b) == 10 || a == 10 ||
-     b == 10 ? true : false;
+// Two Makes Ten  
+const makesTen = (a, b) => {
+  return (a + b) == 10 || a == 10 ||
+    b == 10 ? true : false;
   }
-  console.log(makesTen(10, 9));
-  console.log(makesTen(9, 9));
-  console.log(makesTen(1, 9));
+console.log(makesTen(10, 9));
+console.log(makesTen(9, 9));
+console.log(makesTen(1, 9));
 
-  // Higher number
-  maxNum = (a, b) => {
+// Higher number
+const maxNum = (a, b) => {
     return a > b ? a : b;
   }
-  console.log(maxNum(3, 7));
-  console.log(maxNum(-1, 0));
-  console.log(maxNum(1000, 400));
+console.log(maxNum(3, 7));
+console.log(maxNum(-1, 0));
+console.log(maxNum(1000, 400));
    
   // Let's Fuel Up
-calculateFuel = (fuel) => {
+const calculateFuel = (fuel) => {
   let distance = fuel * 10;
   if (distance > 0) {
    if (fuel <= 10) {
@@ -304,12 +304,12 @@ calculateFuel = (fuel) => {
    return distance;
   }
  }
- console.log(calculateFuel(3));
- console.log(calculateFuel(23.5));
- console.log(calculateFuel(15));
+console.log(calculateFuel(3));
+console.log(calculateFuel(23.5));
+console.log(calculateFuel(15));
 
- // Make array with function
- makePair = (a, b) => {
+// Make array with function
+const makePair = (a, b) => {
   return [a, b];
 }
 console.log(makePair(1, 2));
@@ -321,12 +321,12 @@ comp = (a, b) => {
   return a.length == b.length ? true :
    false;
  }
- console.log(comp("AB", "CD"));
- console.log(comp("ABC", "DE"));
- console.log(comp("hello", "Oskar"));
+console.log(comp("AB", "CD"));
+console.log(comp("ABC", "DE"));
+console.log(comp("hello", "Oskar"));
 
- // Empty String 
- isEmpty = (a) => {
+// Empty String 
+const isEmpty = (a) => {
   return a.length === 0 ? true : false;
 }
 console.log(isEmpty(""));
@@ -334,15 +334,15 @@ console.log(isEmpty(" "));
 console.log(isEmpty("a"));
 
 // Divide a Integer Number
-divisibleByFive = (a) => {
+const divisibleByFive = (a) => {
   return a % 5 === 0 ? true : false;
 }
 console.log(divisibleByFive(5));
 console.log(divisibleByFive(-45));
 console.log(divisibleByFive(37));
  
- // Bitwise Operation
- bitwiseAND = (a, b) => {
+// Bitwise Operation
+const bitwiseAND = (a, b) => {
   return a & b;
  }
  bitwiseOR = (a, b) => {
@@ -351,22 +351,22 @@ console.log(divisibleByFive(37));
  bitwiseXOR = (a, b) => {
   return a ^ b;
  }
- console.log(bitwiseAND(7, 12));
- console.log(bitwiseOR(7, 12));
- console.log(bitwiseXOR(7, 12));
+console.log(bitwiseAND(7, 12));
+console.log(bitwiseOR(7, 12));
+console.log(bitwiseXOR(7, 12));
 
- // Add up the Numbers from a Single Number
- addUp = (a) => {
+// Add up the Numbers from a Single Number
+const addUp = (a) => {
   if (a >= 1 && a <= 1000) {
    return (a * (a + 1)) / 2;
   }
- }
- console.log(addUp(4));
- console.log(addUp(13));
- console.log(addUp(600));
+}
+console.log(addUp(4));
+console.log(addUp(13));
+console.log(addUp(600));
 
- // Mathstick Houses
- matchHouses = (a) => {
+// Mathstick Houses
+const matchHouses = (a) => {
   if (a === 0) {
     return 0;
   }
@@ -376,29 +376,29 @@ console.log(divisibleByFive(37));
   if (a > 1) {
    return 6 + (a - 1) * 5;
   }
- }
- console.log(matchHouses(1));
- console.log(matchHouses(4));
- console.log(matchHouses(87));
+}
+console.log(matchHouses(1));
+console.log(matchHouses(4));
+console.log(matchHouses(87));
  
- // Left Shift by Powers of Two
- shiftToLeft = (a, b) => {
+// Left Shift by Powers of Two
+const shiftToLeft = (a, b) => {
   return a * (2 ** b);
- }
- console.log(shiftToLeft(5, 2));
- console.log(shiftToLeft(10, 3));
- console.log(shiftToLeft(-32, 2));
+}
+console.log(shiftToLeft(5, 2));
+console.log(shiftToLeft(10, 3));
+console.log(shiftToLeft(-32, 2));
  
- // Is it Time for Milk and Cookies?
- timeForMilkAndCookies = (date) => {
+// Is it Time for Milk and Cookies?
+const timeForMilkAndCookies = (date) => {
   return date.setMonth(12) === date.setDate(24)
 }
 console.log(timeForMilkAndCookies(new Date(2013,12,24)));
 console.log(timeForMilkAndCookies(new Date(2013,0,23)));
 console.log(timeForMilkAndCookies(new Date(3000, 12, 24)));
   
- // Which Function Returns the Larger Number?
- whichIsLarger = (f, g) => {
+// Which Function Returns the Larger Number?
+const whichIsLarger = (f, g) => {
   if (f() > g()) {
     return '"' + "f" + '"' ;
   }
@@ -414,7 +414,7 @@ console.log(whichIsLarger(() => 25,  () => 25));
 console.log(whichIsLarger(() => 505050, () => 5050));
 
 // Convert a Number to Base-2
-binary = (a) => {
+const binary = (a) => {
   if (a < 1024) {
       return a.toString(2);
 }
@@ -424,7 +424,7 @@ console.log(binary(5));
 console.log(binary(10));
 
 // Return message 
-has_bugs = (a) => {
+const has_bugs = (a) => {
   if (a === true) {
       return '"say days"';
   }
@@ -436,7 +436,7 @@ console.log(has_bugs(true));
 console.log(has_bugs(false));
 
 //Evaluate an Equation 
-eq = (a) => {
+const eq = (a) => {
   return eval(a);
 }
 console.log(eq("1+2"));
@@ -444,7 +444,7 @@ console.log(eq("6/(9-7)"));
 console.log(eq("3+2-4"));
 
 // Radians to Degrees
-radiansToDegrees = (a) => {
+const radiansToDegrees = (a) => {
   return a *= 57.29577951308232;
 }
 console.log(radiansToDegrees(1));
@@ -452,7 +452,7 @@ console.log(radiansToDegrees(20));
 console.log(radiansToDegrees(50));
 
 // Return Negative
-returnNegative = (a) => {
+const returnNegative = (a) => {
   if (a === 0){
     return a;
   }
@@ -464,7 +464,7 @@ console.log(returnNegative(4));
 console.log(returnNegative(0));
 
 // Reverse an Array 
-reverse = (a) => {
+const reverse = (a) => {
  let array = a;
  return array.reverse();
 }
@@ -473,7 +473,7 @@ console.log(reverse([9,9,2,3,4]));
 console.log(reverse([]));
 
 // Movie Theatre Admittance
-acceptIntoMovie = (a, b) => {
+const acceptIntoMovie = (a, b) => {
   if (a >= 15) {
     return true;
   }
@@ -491,7 +491,7 @@ console.log(acceptIntoMovie(14, false));
 console.log(acceptIntoMovie(16, false));
 
 // Simple Array Manipulation
-incrementItems = (a) => {
+const incrementItems = (a) => {
  let array = a;
  return array.map(x => x + 1);
 }
@@ -500,7 +500,7 @@ console.log(incrementItems([2,4,6,8]));
 console.log(incrementItems([-1, -2, -3, -4]));
 
 // Drinks Allowed? 
-shouldServeDrinks = (age, onBreak) => {
+const shouldServeDrinks = (age, onBreak) => {
  if (onBreak == false) {
   if (age >= 18) {
   return true;
@@ -515,7 +515,7 @@ console.log(shouldServeDrinks(19, false));
 console.log(shouldServeDrinks(30, true));
 
 // Century Crisis
-futurePeople = (people, month) => {
+const futurePeople = (people, month) => {
  return people + month * 360;
 }
 console.log(futurePeople(256,2));
@@ -523,8 +523,7 @@ console.log(futurePeople(3248,6));
 console.log(futurePeople(5240,3));
 
 // Return the Last Element in an Array
-
-getLastItem = (a) => {
+const getLastItem = (a) => {
   let array = a;
   let get = array.pop();
   return get;
@@ -534,7 +533,7 @@ console.log(getLastItem(["cat", "dog", "duck"]));
 console.log(getLastItem([true, false, true]));
 
 // String and Number Conversions
-intToString = (a) => {
+const intToString = (a) => {
   let convert = a;
   return '"' + a + '"';
 }
@@ -545,7 +544,7 @@ console.log(intToString(4));
 console.log(stringToInt("4"));
 
 // On/Off Switches
-posCom = (a) => {
+const posCom = (a) => {
   //return 2 ** a;
   return Math.pow(2,a);
 }
@@ -554,7 +553,7 @@ console.log(posCom(3));
 console.log(posCom(10));
 
 // Among Us Imposter Formula
-imposterFormula = (a, b) => {
+const imposterFormula = (a, b) => {
   if (b <= 10  && a <= 3) {
     //return ((a / b) * 100).toFixed(2) + "%";
     return Math.round((a / b) * 100) + "%";
@@ -565,7 +564,7 @@ console.log(imposterFormula(1, 3));
 console.log(imposterFormula(1,8));
 
 // Find Out the Leap Year 
-leapYear = (a) => {
+const leapYear = (a) => {
   if(a % 4 == 0) {
     if(a % 100 == 0) {
       if (a % 400 == 0) {
@@ -586,7 +585,7 @@ console.log(leapYear(2021));
 console.log(leapYear(1700));
 
 // Moving House
-yearsInOneHouse = (age, moves) => {
+const yearsInOneHouse = (age, moves) => {
  return Math.round(age / (moves + 1));
 }
 console.log(yearsInOneHouse(30, 1));
@@ -594,7 +593,7 @@ console.log(yearsInOneHouse(15, 2));
 console.log(yearsInOneHouse(80, 0));
 
 // Word without First Character
-newWord = (a) => {
+const newWord = (a) => {
   let word = a;
   // return word.slice(1);
   return word.substring(1);
@@ -604,7 +603,7 @@ console.log(newWord("cherry"));
 console.log(newWord("Oskar"));
 
 // Flip the Boolean
-flipBool = (a) => {
+const flipBool = (a) => {
 return a == true ? 0 : 1;
 return a == 1 ? 0 : 1;
 }
@@ -614,7 +613,7 @@ console.log(flipBool(1));
 console.log(flipBool(0));
 
 // Name Greeting!
-helloName = (name) => {
+const helloName = (name) => {
   return '"Hello ' + name + '!"';
 }
 console.log(helloName("Gerald"));
@@ -622,7 +621,7 @@ console.log(helloName("Tiffany"));
 console.log(helloName("Ed"));
 
 // Check Whether a Given Number Is Odd 
-isOdd = (a) => {
+const isOdd = (a) => {
   return a % 2 == 0 ? false : true;
 }
 console.log(isOdd(-5));
@@ -630,7 +629,7 @@ console.log(isOdd(25));
 console.log(isOdd(0));
 
 // RegEx Exercise 1: Find the Time
-findReg = () => {
+const findReg = () => {
   let bar = "09:00" + "123:456"
   let filter = /09:00/i;
   let result = bar.match(filter);
@@ -639,7 +638,7 @@ findReg = () => {
 console.log(findReg());
 
 // RegEx XIV: Group Ranges x|y
-regStepTwo = () => {
+const regStepTwo = () => {
   const regexp = /(red|blue) flag/g;
   let result = "yellow flag red flag blue flag green flag".match(regexp);
  return result;
@@ -647,7 +646,7 @@ regStepTwo = () => {
 console.log(regStepTwo());
 
 // Stack the Boxes
-stackBoxes = (a) => {
+const stackBoxes = (a) => {
   if (a >= 0) {
   if (a == 0) {
     return a = 0;
@@ -660,7 +659,7 @@ console.log(stackBoxes(2));
 console.log(stackBoxes(0));
 
 // Circle or Square 
-circle_or_square = (rad, area) => {
+const circle_or_square = (rad, area) => {
  let circle = 2 * rad * 3.14;
  let square = Math.sqrt(area) * 4;
  if (circle > square) {
@@ -675,7 +674,7 @@ console.log(circle_or_square(5, 100));
 console.log(circle_or_square(8, 144));
 
 // Triangle and Parallelogram Area Finder
-areaShape = (base, height, shape) => {
+const areaShape = (base, height, shape) => {
   if(shape == "triangle" || "parallelogram") {
     if(shape == "triangle"){
       return 0.5 * base * height;
@@ -690,7 +689,7 @@ console.log(areaShape(8,6, "parallelogram"));
 console.log(areaShape(2.9, 1.3, "parallelogram"));
 
 // Many Operators! 
-operate = (a, b, sign) => {
+const operate = (a, b, sign) => {
  if(sign == "+") {
   return a + b;
  }
@@ -706,7 +705,7 @@ console.log(operate(7,10,"-"));
 console.log(operate(20,10,"%"));
 
 // Concatenating Two Integer Arrays
-concat = (a, b) => {
+const concat = (a, b) => {
  return a.concat(b);
 }
 console.log(concat([1, 3, 5], [2, 6, 8]));
@@ -714,7 +713,7 @@ console.log(concat([7, 8], [10, 9, 1, 1, 2]));
 console.log(concat([4, 5, 1], [3, 3, 3, 3, 3]));
 
 // Find the Index 
-findIndex = (array, select) => {
+const findIndex = (array, select) => {
  let arr = array;
  let check = arr.indexOf(select);
  return check;
@@ -725,7 +724,7 @@ console.log(findIndex(["a", "g", "y", "d"], "d"));
 console.log(findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple"));
 
 // Array Indexing
-valueAt = (a, b) => {
+const valueAt = (a, b) => {
  return a[Math.floor(b)];
 }
 console.log(valueAt([1, 2, 3, 4, 5, 6], 10 / 2));
@@ -733,7 +732,7 @@ console.log(valueAt([1, 2, 3, 4, 5, 6], 8.0 / 2));
 console.log(valueAt([1, 2, 3, 4], 6.535355314 / 2));
 
 // Number of Squares in an N * N Grid
-numberSquares = (a) => {
+const numberSquares = (a) => {
  if(a == 0){
   return 0;
  }
@@ -749,7 +748,7 @@ console.log(numberSquares(4));
 console.log(numberSquares(5));
 
 // Sum of Resistance in Series Circuits
-seriesResistance = (a) => {
+const seriesResistance = (a) => {
   check = (total, num) => {
     return total + num;
   }
@@ -762,7 +761,7 @@ console.log(seriesResistance([16, 3.5, 6]));
 console.log(seriesResistance([0.5, 0.5]));
 
 // Largest Swap
-largestSwap = (number) => {
+const largestSwap = (number) => {
   if (number > 9 && number < 100) {
     let check = number;
     let reverse = number.toString().split('').reverse().join('');
@@ -779,7 +778,7 @@ console.log(largestSwap(53));
 console.log(largestSwap(99));
 
 // What's Hiding Amongst the Crowd? 
-detectWord = (a) => {
+const detectWord = (a) => {
   let word = a;
   let regex = /[^A-Z]/g;
   let check = word.match(regex);
@@ -791,7 +790,7 @@ console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
 console.log(detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
 
 // Hex to Binary
-toBinary = (a) => {
+const toBinary = (a) => {
   let convert = a.toString(2);
   return convert;
 }
@@ -845,7 +844,7 @@ sortByDrinkPrice = (drinks) => {
 console.log(sortByDrinkPrice(drinks));
 
 // arrayValuesTypes 
-arrayValuesTypes = (array) => {
+const arrayValuesTypes = (array) => {
  const arr = array;
  const map = array.map(x => typeof x);
  return map
@@ -855,7 +854,7 @@ console.log(arrayValuesTypes(["214", true, false, 2, 2.15, [], null]));
 console.log(arrayValuesTypes([21.1, "float", "array", ["I am array"], null, true, 214]));
 
 // Find the Index 
-search = (a, index) => {
+const search = (a, index) => {
   return a.indexOf(index);
 }
 console.log(search([1, 5, 3], 5));
@@ -863,7 +862,7 @@ console.log(search([9, 8, 3], 3));
 console.log(search([1, 2, 3], 4));
 
 // Convert All Array Items to String
-parseArray = (a) => {
+const parseArray = (a) => {
  let arr = a;
  return arr.map(x => x.toString());
 }
@@ -874,17 +873,17 @@ console.log(parseArray([]));
 
 
 // Recursioh
-length = (a) => {
+const lengthStr = (a) => {
  return typeof a == "string" ? a
   .length : undefined;
 }
-console.log(length("apple"));
-console.log(length("make"));
-console.log(length("a"));
-console.log(length(""));
+console.log(lengthStr("apple"));
+console.log(lengthStr("make"));
+console.log(lengthStr("a"));
+console.log(lengthStr(""));
 
 // Divides Evenly
-dividesEvenly = (a, b) => {
+const dividesEvenly = (a, b) => {
   if (a >= 0) {
    return a % b == 0 ? true : false;
   }
@@ -893,14 +892,14 @@ dividesEvenly = (a, b) => {
  console.log(dividesEvenly(85, 4));
  
 // Find the Smallest and Biggest Numbers
-minMax = (a) => {
+const minMax = (a) => {
   return [Math.min(...a), Math.max(...
    a)];
  }
  console.log(minMax([1, 2, 3, 4, 5]));
 
 // Check if One Array can be Nested to Another
-canNest = (a, b) => {
+const canNest = (a, b) => {
   let arrA1 = Math.min(...a);
   let arrB1 = Math.min(...b);
   if (arrA1 > arrB1) {
@@ -914,8 +913,8 @@ canNest = (a, b) => {
  console.log(canNest([9, 9, 8], [8,9]));
  console.log(canNest([1, 2, 3, 4], [2,3]));
 
- //String to Integer  
-stringInt = (a) => {
+//String to Integer  
+const stringInt = (a) => {
   if (a > 0) {
    return parseInt(a);
   }
@@ -934,7 +933,7 @@ area = (a, b) => {
  console.log(area(0, 2));
 
  // Concatenate First and Last Name into One String
-concatName = (a, b) => {
+const concatName = (a, b) => {
   return '"' + b + " " + a + '"';
  }
  console.log(concatName("First",
@@ -943,19 +942,19 @@ concatName = (a, b) => {
  console.log(concatName("Marry","Jane"));
 
  // Arrow Functions
-add2 = (x) => {
+const add2 = (x) => {
   return x + 2;
  }
- add3 = (x) => {
+ const add3 = (x) => {
      return x + 3;
  }
- add5 = (x) => {
+ const add5 = (x) => {
      return x + 5;
  }
- add7 = (x) => {
+ const add7 = (x) => {
      return x + 7;
  }
- add11 = (x) => {
+ const add11 = (x) => {
      return x + 11;
  }
  console.log(add2(2));
@@ -964,15 +963,14 @@ add2 = (x) => {
  console.log(add7(2));
  console.log(add11(2));
 
- // Using Ternary Operators
-
+// Using Ternary Operators
 let smile = true;
 let checkHumor = smile ? true : false;
 console.log(checkHumor);
 console.log(!checkHumor);
 
 // Minimal IV: if-else if-else Inferno
-equilbrium = (x) => {
+const equilbrium = (x) => {
   if (x > 0) {
       return "positive";
   }
@@ -984,8 +982,7 @@ console.log(equilbrium(7));
 console.log(equilbrium(-2));
 
 // Is the String Odd or Even?
-
-oddOrEven = (a) => {
+const oddOrEven = (a) => {
   let word = a.length;
   if (word % 2 == 0) {
       return true;
@@ -998,7 +995,6 @@ console.log(oddOrEven("apple"));
 console.log(oddOrEven("cherry"));
 
 // ES6: Destructuring Arrays I
-
 const arr = [1, 2, 3, 4, 5, 6];
 const a = arr[4];
 const b = arr[5];
@@ -1007,7 +1003,7 @@ const c = a + b;
 console.log(c);
 
 // Minimal I: If Boolean Then Boolean
-minimal = (a) => {
+const minimal = (a) => {
   return a % 2 === 0 ? true : false;
 }
 console.log(minimal(8));
@@ -1015,7 +1011,7 @@ console.log(minimal(11));
 console.log(minimal(0));
 
 // Count Instances of a Character in a String
-charCount = (a, b) => {
+const charCount = (a, b) => {
  let str = b.split('');
   let check = str.filter((A) => (a === A)).length;
  return check;
@@ -1025,7 +1021,7 @@ console.log(charCount("c", "Chamber of secrets"));
 console.log(charCount("b", "big fat bubble"));
 
 // 50-30-20 Strategy
-fiftyThirtyTwenty = (a) => {
+const fiftyThirtyTwenty = (a) => {
 let obj = {
   Needs: 0.5 * a,
   Wants: 0.3 * a,
@@ -1038,7 +1034,7 @@ console.log(fiftyThirtyTwenty(50000));
 console.log(fiftyThirtyTwenty(13450));
 
 // Inches to Feet
-inchesToFeet = (a) => {
+const inchesToFeet = (a) => {
   return a = a / 12;
 }
 console.log(inchesToFeet(324));
@@ -1046,7 +1042,7 @@ console.log(inchesToFeet(12));
 console.log(inchesToFeet(36));
 
 // I'd Like a New Shade of Blue, Please
-howManyWalls = (square, width, height) => {
+const howManyWalls = (square, width, height) => {
   let calc = square / (width * height);
   return parseInt(calc);
 }
@@ -1055,7 +1051,7 @@ console.log(howManyWalls(10, 15, 12));
 console.log(howManyWalls(41, 3, 6));
 
 // To the Power of
-calculateExponent = (a, b) => {
+const calculateExponent = (a, b) => {
   return a **= b;
   // Math.pow(a,b);
  }
@@ -1063,8 +1059,8 @@ calculateExponent = (a, b) => {
  console.log(calculateExponent(10,10));
  console.log(calculateExponent(3,3));
  
- // Tuck in Array
-tuckIn = (add, arr) => {
+// Tuck in Array
+const tuckIn = (add, arr) => {
   let array = arr;
   let start = array.unshift(add[0]);
   let end = array.push(add[1]);
@@ -1075,7 +1071,7 @@ console.log(tuckIn([15,150], [45, 75, 35]));
 console.log(tuckIn([[1, 2], [5, 6]], [[3, 4]]));
 
 // Find the Amount of Potatoes
-potatoes = (a) => {
+const potatoes = (a) => {
   let text = a;
   let regex = /potato/g;
   let check = text.match(regex);
@@ -1087,7 +1083,7 @@ console.log(potatoes("potatopotato"));
 console.log(potatoes("potatoapple"));
 
 // Slightly Superior
-isFirstSuperior = (a, b) => {
+const isFirstSuperior = (a, b) => {
   if(a > b) {
      return true;
   }
@@ -1101,7 +1097,7 @@ isFirstSuperior = (a, b) => {
  console.log(isFirstSuperior([true, 10, "zebra"], [true, 10, "zebra"]));
 
  // Come Check Out This Crazy Function
-crazyfunction = (a, b) => {
+ const crazyfunction = (a, b) => {
   let first = a;
   first ^= b;
   return first;
@@ -1111,14 +1107,14 @@ console.log(crazyfunction(17, 35));
 console.log(crazyfunction(61, 233));
 
 // No Conditionals?
-flip = (a) => {
+const flip = (a) => {
   return  Math.abs(a - 1);
 }
 console.log(flip(0));
 console.log(flip(1));
 
 // Number Split
-numberSplit = (a) => {
+const numberSplit = (a) => {
   let first = Math.floor(0.5 * a);
   let second = Math.ceil(0.5 * a);
   let array = [];
@@ -1132,7 +1128,7 @@ console.log(numberSplit(11));
 console.log(numberSplit(-9));
 
 // Sum of Multiplication 
-multiSum = (a) => {
+const multiSum = (a) => {
   let number = 0;
   for(let i=1; i <= 10; i++){
       number += a * i;
@@ -1145,7 +1141,7 @@ console.log(multiSum(10));
 console.log(multiSum(8));
 
 // filter Array
-filterArray = (a) => {
+const filterArray = (a) => {
   checkArray = (item) => {
     return Number.isInteger(item);
   }
@@ -1157,7 +1153,7 @@ console.log(filterArray([1, "a", "b", 0, 15]));
 console.log(filterArray([1, 2, "aasf", "1", "123", 123]));
 
 //Seven Boom!
-sevenBoom = (a) => {
+const sevenBoom = (a) => {
   let arr = a;
   let arr2 = arr.toString();
   let regex = /7/i;
@@ -1177,7 +1173,7 @@ console.log(sevenBoom([2, 55, 60, 97, 86]));
 console.log(sevenBoom([29, 14, 60, 9, 58]));
 
 // Incorrect Import Statement 
-fixImport = (a) => {
+const fixImport = (a) => {
   let array = a.split(' ');
   let firstItem = array.splice(0,1);
   let secondItem = array.splice(0,1);
@@ -1193,7 +1189,7 @@ console.log(fixImport("import randint from random"));
 console.log(fixImport("import pi from math"));
 
 //Error Messages
-error = (a) => {
+const error = (a) => {
   let obj = {
   1:"Check the fan: e1",
   2:"Emergency stop: e2",
@@ -1208,7 +1204,7 @@ console.log(error(2));
 console.log(error(4));
 
 // Spotlight Sum 
-spotlight_sum = (a) => {
+const spotlight_sum = (a) => {
 const array = [
   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   [11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
@@ -1229,7 +1225,7 @@ console.log(spotlight_sum(48));
 console.log(spotlight_sum(88));
 
 //Repeating Letters
-doubleChar = (a) => {
+const doubleChar = (a) => {
   let check = a.split('');
   let doubleString = check.map((item) => {return item + item});
   let result = doubleString.join('');
@@ -1240,7 +1236,7 @@ console.log(doubleChar("Hello World!"));
 console.log(doubleChar("1234!_ "));
 
 // RegEx XV
-RegexFive = (a) => {
+const RegexFive = (a) => {
   let check = a;
   const reg = /[^a-z, 0-9, ]/g;
   let result = check.match(reg);
@@ -1249,7 +1245,7 @@ RegexFive = (a) => {
 console.log(RegexFive("alice15@gmail.com"));
 
 // Sort by String Length
-sortByLength = (a) => {
+const sortByLength = (a) => {
 let result = a.sort((a,b) => { return a.length-b.length;});
 return a;
 }
@@ -1258,7 +1254,7 @@ console.log(sortByLength(["apple", "pie", "shortcake"]));
 console.log(sortByLength(["may", "april", "september", "august"]));
 
 // Sum of Cubes
-sumOfCubes = (a) => {
+const sumOfCubes = (a) => {
   let array = a;
   let arr = array.map((x) => { return x ** 3});
   let result = arr.reduce((sum, number) => { return sum + number})
@@ -1269,7 +1265,7 @@ console.log(sumOfCubes([3, 4, 5]));
 console.log(sumOfCubes([2]));
 
 // Highest Digit
-highestDigit = (a) => {
+const highestDigit = (a) => {
   let text = a;
   let check = String(a).split('');
   let result = Math.max(...check);
@@ -1280,7 +1276,7 @@ console.log(highestDigit(2));
 console.log(highestDigit(377401));
 
 // Pi to N Decimal Places
-myPi = (a) => {
+const myPi = (a) => {
   return Math.PI.toFixed(a);
 }
 console.log(myPi(2));
@@ -1288,7 +1284,7 @@ console.log(myPi(5));
 console.log(myPi(15));
 
 // Recursion to Repeat a String n Number of Times
-repetition = (a, b) => {
+const repetition = (a, b) => {
   return a.repeat(b);
 }
 console.log(repetition("ab", 3));
@@ -1296,7 +1292,7 @@ console.log(repetition("kiwi", 1));
 console.log(repetition("cherry", 2));
 
 // Burglary Series (10): Calculate Difference
-calculateDifference = (a, b) => {
+const calculateDifference = (a, b) => {
   let array = Object.values(a);
   let add = array.reduce((item, total) => item + total);
   let result = add - b;
@@ -1307,14 +1303,14 @@ console.log(calculateDifference({ skate: 10, painting: 20 }, 19));
 console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400));
 
 // Simple time clock 
-simpleClock = () => {
+const simpleClock = () => {
   let data = new Date();
   document.getElementById("clock").innerHTML = "<b>" + data.toLocaleTimeString() + "</b>";
 }
 setInterval(simpleClock, 1000);
 
 // Is the Average of All Elements a Whole Number?
-isAvgWhole = (a) => {
+const isAvgWhole = (a) => {
   let result = Number.isInteger((a.reduce((item, total) => item + total) / a.length));
 return result;
 }
@@ -1325,7 +1321,7 @@ console.log(isAvgWhole([1, 1, 1]));
 console.log(isAvgWhole([9, 2, 2, 5]));
 
 // Absolute Sum
-getAbsSum = (a) => {
+const getAbsSum = (a) => {
   let array = a;
   let result = array.reduce((item, total) => Math.abs(item)+ Math.abs(total));
   return result;
@@ -1335,7 +1331,7 @@ console.log(getAbsSum([-3, -4, -10, -2, -3]));
 console.log(getAbsSum([2, 4, 6, 8, 10]));
 
 // Drop the First Elements of an Array
-drop = (a, b) => {
+const drop = (a, b) => {
   const array = a;
   return array.splice(b, 100);
   }
@@ -1345,7 +1341,7 @@ console.log(drop([1, 2, 3], 5));
 console.log(drop([1, 2, 3], 0));
    
 //  Upvotes vs Downvotes  
-getVoteCount = (a) => {
+const getVoteCount = (a) => {
   if (a.upvote > 0) {
     return a.upvote - a.downvote;
   }
@@ -1354,9 +1350,8 @@ console.log(getVoteCount({upvote: 13,downvote: 2}));
 console.log(getVoteCount({upvote: 126,downvote: 126}));
 console.log(getVoteCount({upvote: 10,downvote: 33}));
 
-// Reverse the number
-   
-reverseNumber = (number) => {
+// Reverse the number   
+const reverseNumber = (number) => {
   return number.toString().split('')
     .reverse()
     .join('');
@@ -1365,7 +1360,7 @@ console.log(reverseNumber(12345));
 console.log(reverseNumber(173939));
 
 // Recursion: Factorials
-  factorial = (a) => {
+const factorial = (a) => {
     for(let i = a - 1; i >= 1; i--){
       a = a * i;
     }
@@ -1376,7 +1371,7 @@ console.log(factorial(3));
 console.log(factorial(1));
 
 // Sort Numbers in Ascending Order
-sortNumsAscending = (a) => {
+const sortNumsAscending = (a) => {
 let check = a;
 if(a === null || a === []) {
   return [];
@@ -1390,7 +1385,7 @@ console.log(sortNumsAscending(null));
 console.log(sortNumsAscending([]));
 
 // Find the Bomb
-bomb = (a) => {
+const bomb = (a) => {
   let check = a.match(/bomb/gi);
   if(check) {
     return "Duck!!!";
@@ -1402,7 +1397,7 @@ console.log(bomb("Hey, did you think there is a bomb?"));
 console.log(bomb("This goes boom!!!"));
 
 // Remove Every Vowel from a String
-removeVowels = (a) => {
+const removeVowels = (a) => {
   let filtering = a.match(/[^aeiou]/g);
   return filtering.join('');
 }
@@ -1411,7 +1406,7 @@ console.log(removeVowels("We're gonna build a wall!"));
 console.log(removeVowels("Happy Thanksgiving to all--even the haters and losers!"));
 
 // Return the Index of the First Vowel
-firstVowel = (a) => {
+const firstVowel = (a) => {
   let search = a.match(/[aeiou]/i);
   return search.index;
 }
@@ -1421,7 +1416,7 @@ console.log(firstVowel("STRAWBERRY"));
 console.log(firstVowel("pInEaPPLe"));
 
 // Is it True?
-isTrue = (a) => {
+const isTrue = (a) => {
   return eval(a.replace("=", "==="));
 }
 console.log(isTrue("2=2"));
@@ -1429,7 +1424,7 @@ console.log(isTrue("8<7"));
 console.log(isTrue("5=13"));
 
 // Calculate the Mean 
-mean = (a) => {
+const mean = (a) => {
  let sum =  a.reduce((item,total) => (item + total));
  return (sum / a.length).toFixed(2);
 }
@@ -1438,7 +1433,7 @@ console.log(mean([2, 3, 2, 3]));
 console.log(mean([3, 3, 3, 3, 3]));
 
 // How Much is True?
-countTrue = (a) => {
+const countTrue = (a) => {
   let arr = a;
   let str = arr.join(' ');
   let searchingTrue = str.match(/true/g);
@@ -1452,7 +1447,7 @@ console.log(countTrue([false, false, false, false]));
 console.log(countTrue([]));
 
 // A Redundant Function
-Closures = () => {
+const Closures = () => {
 f1 = () => {
   return "apple";
 }
@@ -1469,7 +1464,7 @@ console.log(f2());
 console.log(f3());
 
 // RegEx Exercise: An empty string
-matchReg = () => {
+const matchReg = () => {
   let str = "";
   return str.length === 0 ? true : false;
 }
@@ -1484,7 +1479,7 @@ console.log(possibleBonus(1,9));
 console.log(possibleBonus(5,3));
 
 // Derivative of a Function
-derivative = (a, b) => {
+const derivative = (a, b) => {
   return a * b ** (a - 1);
  }
  console.log(derivative(1, 4));
@@ -1492,7 +1487,7 @@ derivative = (a, b) => {
  console.log(derivative(4, -3));
  
 // Which Generation Are You?
-generation = (a, b) => {
+const generation = (a, b) => {
   let number = a;
   if (b === "m") {
    let objM = {
@@ -1519,79 +1514,77 @@ generation = (a, b) => {
    return objF[number];
   }
  }
- console.log(generation(2, "f"));
- console.log(generation(-3, "m"));
- console.log(generation(1, "f"));
+console.log(generation(2, "f"));
+console.log(generation(-3, "m"));
+console.log(generation(1, "f"));
 
- // Find the nth Tetrahedral Number
-tetra = (a) => {
+// Find the nth Tetrahedral Number
+const tetra = (a) => {
   return (a * (a + 1) * (a + 2)) / 6;
  }
  console.log(tetra(2));
  console.log(tetra(5));
  console.log(tetra(6));
 
- // Learn Lodash (2): Compact
-compact = (a) => {
+// Learn Lodash (2): Compact
+const compact = (a) => {
   return a.filter(Boolean);
  }
- console.log(compact([0, 1,
-  false, 2, "", 3
- ]));
+console.log(compact([0, 1,false, 2, "", 3]));
  
- // Function Factory
-plusFive = (a) => {
+// Function Factory
+const plusFive = (a) => {
   return a + 5;
  }
  plusTen = (b) => {
   return b + 10;
  }
- console.log(plusFive(2));
- console.log(plusFive(-8));
- console.log(plusTen(0));
- console.log(plusFive(plusTen(0)));
+console.log(plusFive(2));
+console.log(plusFive(-8));
+console.log(plusTen(0));
+console.log(plusFive(plusTen(0)));
 
 // Converting Objects to Arrays
-toArray = (a) => {
+const toArray = (a) => {
   return Object.entries(a);
  }
- console.log(toArray({a: 1,b: 2}));
- console.log(toArray({shrimp: 15,tots: 12}))
- console.log(toArray({}));
+console.log(toArray({a: 1,b: 2}));
+console.log(toArray({shrimp: 15,tots: 12}))
+console.log(toArray({}));
 
- // Concatenate Variable Number of Input Arrays
-concat = (a) => {
+// Concatenate Variable Number of Input Arrays
+const concatNum = (a) => {
   let result = a;
   return result.flatMap(word => word);
  }
- console.log(concat([[1, 2, 3],[4, 5],[6, 7]]));
- console.log(concat([[1],[2],[3],[4],[5],[6],[7]]));
- console.log(concat([4, 4, 4, 4, 4]));
+ console.log(concatNum([[1, 2, 3],[4, 5],[6, 7]]));
+ console.log(concatNum([[1],[2],[3],[4],[5],[6],[7]]));
+ console.log(concatNum([4, 4, 4, 4, 4]));
 
- // All About Anonymous Functions: Adding Suffixes
-addText = (a) => {
+// All About Anonymous Functions: Adding Suffixes
+const addText = (a) => {
   add_ly = (b) => {
    return b + "ly";
   }
   add_less = (c) => {
    return c + "less";
   }
- }
- addText();
- console.log(add_ly("hopeless"));
- console.log(add_ly("total"));
- console.log(add_less("fear"));
- console.log(add_less("ruth"));
+}
+addText();
+console.log(add_ly("hopeless"));
+console.log(add_ly("total"));
+console.log(add_less("fear"));
+console.log(add_less("ruth"));
 
- // Triangular Number Sequence
-triangle = (a) => {
+// Triangular Number Sequence
+const triangle = (a) => {
   return a * (a + 1) / 2
- }
- console.log(triangle(1));
- console.log(triangle(6));
- console.log(triangle(215));
+}
+console.log(triangle(1));
+console.log(triangle(6));
+console.log(triangle(215));
 
- // Make a Circle with OOP
+// Make a Circle with OOP
 class Circle {
   constructor(radius) {
    this.radius = radius;
@@ -1603,44 +1596,44 @@ class Circle {
    return Math.PI * 2 * this.radius;
   }
  }
- let circy = new Circle(11);
- console.log(circy.getArea().toFixed(2));
- circy = new Circle(4.44);
- console.log(circy.getPerimeter().toFixed(2));
+let circy = new Circle(11);
+console.log(circy.getArea().toFixed(2));
+circy = new Circle(4.44);
+console.log(circy.getPerimeter().toFixed(2));
 
  // Convenience Store
-changeEnough = (a, b) => {
+const changeEnough = (a, b) => {
   return (a[0] * 0.25 + a[1] * 0.1 + a[2] * 0.05 + a[3] * 0.01) >= b;
  }
  console.log(changeEnough([2, 100, 0, 0], 14.11));
  console.log(changeEnough([0, 0, 20, 5], 0.75));
  console.log(changeEnough([30, 40, 20, 5], 12.55));
 
- // Array of Multiples
-arrayOfMultiples = (a, b) => {
+// Array of Multiples
+const arrayOfMultiples = (a, b) => {
   let arr = [];
   for (let i = 1; i <= b; i++) {
    arr.push(i * a);
   }
   return arr;
- }
- console.log(arrayOfMultiples(7, 5));
- console.log(arrayOfMultiples(12,10));
- console.log(arrayOfMultiples(17, 6));
+}
+console.log(arrayOfMultiples(7, 5));
+console.log(arrayOfMultiples(12,10));
+console.log(arrayOfMultiples(17, 6));
 
- // Return the Objects Keys and Values
-keysAndValues = (a) => {
+// Return the Objects Keys and Values
+const keysAndValues = (a) => {
   let arr = [];
   arr.push(Object.keys(a));
   arr.push(Object.values(a));
   return arr;
- }
- console.log(keysAndValues({a: 1, b: 2, c: 3}));
- console.log(keysAndValues({a: "Apple", b: "Microsoft", c: "Google"}));
- console.log(keysAndValues({key1: true,key2: false,key3: undefined}));
+}
+console.log(keysAndValues({a: 1, b: 2, c: 3}));
+console.log(keysAndValues({a: "Apple", b: "Microsoft", c: "Google"}));
+console.log(keysAndValues({key1: true,key2: false,key3: undefined}));
 
- // Front 3 - Slice Check Repeat Concatenate
-frontThree = (a) => {
+// Front 3 - Slice Check Repeat Concatenate
+const frontThree = (a) => {
   let s = a.slice(0, 3);
   return s + s + s;
 }
@@ -1649,7 +1642,7 @@ console.log(frontThree("Cucumber"));
 console.log(frontThree("bioshock"));
 
 // Summary Array
-sumArray = (a) => {
+const sumArray = (a) => {
   let sum = a.reduce(summary = (a, b) => {
      return a + b
     });
@@ -1660,7 +1653,7 @@ console.log(sumArray([-1, 0, 1]));
 console.log(sumArray([0, 4, 8, 12]));
 
 // Search number in array
-findInArray = (number) => {
+const findInArray = (number) => {
 let found = false;
 const arr = [
   [1, 2, 7],
@@ -1680,7 +1673,7 @@ console.log(findInArray(0));
 console.log(findInArray(27));
 
 // Even All the Way 
-getOnlyEvens = (a) => {
+const getOnlyEvens = (a) => {
   let arr = a;
   let result = arr.filter((item, index) => item % 2 === 0 && index % 2 === 0);
    return result;
@@ -1690,7 +1683,7 @@ console.log(getOnlyEvens([0, 1, 2, 3, 4]));
 console.log(getOnlyEvens([1, 2, 3, 4, 5]));
 
 // How Many Vowels?
-countVowels = (a) => {
+const countVowels = (a) => {
   return a.match(/[aeiou]/gi).length;
    /* let text = a;
     let regexp = /[aeiou]/gi;
@@ -1703,7 +1696,7 @@ console.log(countVowels("Palm"));
 console.log(countVowels("Prediction"));
 
 // Check If It's a Title String
-checkTitle = (a) => {
+const checkTitle = (a) => {
   let arr = a.split(" ");
   let result = arr.every((item) => item[0] === item[0].toUpperCase())
     return result;
@@ -1713,7 +1706,7 @@ console.log(checkTitle("A Simple Java Script Program!"));
 console.log(checkTitle("Water is transparent"));
 
 // Right Shift by Division
-shiftToRight = (a, b) => {
+const shiftToRight = (a, b) => {
   if (b => 0) {
     return Math.floor(a / (2 ** b));
   }
@@ -1726,7 +1719,7 @@ console.log(shiftToRight(3777, 6));
 console.log(shiftToRight(-512,10));
 
 // Perimeters with a Catch
-perimeter = (l,num) => {
+const perimeter = (l,num) => {
   let s = 4;
   let c = 6.28;
   return l === "s" ? 4 * num : 6.28 * num;
@@ -1736,7 +1729,7 @@ console.log(perimeter("c", 4));
 console.log(perimeter("c", 9));
 
 // Find Number of Digits in Number 
-num_of_digits = (a) => {
+const num_of_digits = (a) => {
   let check = a.toString().split('');
     return check.length;
 }
@@ -1746,7 +1739,7 @@ console.log(num_of_digits(1305981031));
 console.log(num_of_digits(0));
 
 // Burglary Series (04): Add its Name
-addName = (a, b, c) => {
+const addName = (a, b, c) => {
   let obj = a;
   let name = b;
   let obj2 = {[name]: c};
@@ -1758,7 +1751,7 @@ console.log(addName({ piano: 500 }, "Brutus", 400));
 console.log(addName({ piano: 500, stereo: 300 }, "Caligula", 440));
 
 // Convert Key, Values in an Object to Array
-objectToArray = (a) => {
+const objectToArray = (a) => {
   return Object.entries(a);
  }
  console.log(objectToArray({D: 1,B: 2,C: 3}));
@@ -1771,31 +1764,30 @@ objectToArray = (a) => {
   }
   return false;
  }
- console.log(intWithinBounds(3, 1, 9));
- console.log(intWithinBounds(6, 1, 6));
- console.log(intWithinBounds(4.5, 3,8));
+console.log(intWithinBounds(3, 1, 9));
+console.log(intWithinBounds(6, 1, 6));
+console.log(intWithinBounds(4.5, 3,8));
 
-  // Reverse Words in a String
-  reverseWords = (a) => {
- 
-    return a.trim().split(" ").reverse().join(" ");
-   }
-   console.log(reverseWords(" the sky is blue"));
-   console.log(reverseWords("hello   world!  "));
-   console.log(reverseWords("a good example"));
+// Reverse Words in a String
+const reverseWords = (a) => {
+  return a.trim().split(" ").reverse().join(" ");
+}
+console.log(reverseWords(" the sky is blue"));
+console.log(reverseWords("hello   world!  "));
+console.log(reverseWords("a good example"));
    
-   //  Integer Digits Count
- count = (a) => {
+// Integer Digits Count
+const count = (a) => {
   let conversion = String(a).match(
    /[0-9]/gi);
   return conversion.length;
- }
- console.log(count(318));
- console.log(count(-49427));
- console.log(count(5482));
+}
+console.log(count(318));
+console.log(count(-49427));
+console.log(count(5482));
 
- // Is the Number a Repdigit
- isRepdigit = (a) => {
+// Is the Number a Repdigit
+const isRepdigit = (a) => {
   if (a >= 0) {
    let result = String(a).split("");
    if (result[0] === result[1] ||
@@ -1804,31 +1796,30 @@ objectToArray = (a) => {
    }
   }
   return false;
- }
- console.log(isRepdigit(66));
- console.log(isRepdigit(65));
- console.log(isRepdigit(0));
- console.log(isRepdigit(-11));
+}
+console.log(isRepdigit(66));
+console.log(isRepdigit(65));
+console.log(isRepdigit(0));
+console.log(isRepdigit(-11));
  
-
- // Even Number?
- evenNumber = (a) => {
+// Even Number?
+const evenNumber = (a) => {
   return a % 2 === 0;
- }
- console.log(evenNumber("431"));
- console.log(evenNumber("132"));
- console.log(evenNumber("29"));
+}
+console.log(evenNumber("431"));
+console.log(evenNumber("132"));
+console.log(evenNumber("29"));
 
 // Find the Largest Numbers in a Group of Arrays
- findLargestNums = (a) => {
+const findLargestNums = (a) => {
  return a.map(item => {return Math.max(...item)});
- }
+}
 console.log(findLargestNums([[4, 2, 7, 1], [20, 70, 40, 90], [1, 2, 0]]));
 console.log(findLargestNums([[-34, -54, -74], [-32, -2, -65], [-54, 7, -43]]));
 console.log(findLargestNums([[0.4321, 0.7634, 0.652], [1.324, 9.32, 2.5423,4.314], [9, 3, 6, 3]]));
 
 // Sort the Unsortable
-sortIt = (a) => {
+const sortIt = (a) => {
   return a.sort((item, item2) =>
     item - item2);
 }
@@ -1837,7 +1828,7 @@ console.log(sortIt([[4], [1], [3]]));
 console.log(sortIt([[3], 4, [2], [5], 1, 6]));
 
 // Remove Trailing and Leading Zeros
-removeLeadingTrailing = (a) => {
+const removeLeadingTrailing = (a) => {
   return parseFloat(a);
 }
 console.log(removeLeadingTrailing("230.000"));
@@ -1846,7 +1837,7 @@ console.log(removeLeadingTrailing("03.1400"));
 console.log(removeLeadingTrailing("30"));
 
 //  Value vs. Reference Types
-checkEquals = (a, b) => {
+const checkEquals = (a, b) => {
   let first = String(a);
   let second = String(b);
   return first === second;
@@ -1857,7 +1848,7 @@ console.log(checkEquals([4, 5, 6], [4, 5, 6]));
 console.log(checkEquals([4, 7, 6], [4, 5, 6]));
 
 // Flattening an Array
-flatten = (a) => {
+const flatten = (a) => {
   let result = a.flatMap(item => item);
   return result;
 }
@@ -1866,7 +1857,7 @@ console.log(flatten([["a", "b"], ["c", "d"]]));
 console.log(flatten([[true, false], [false, false]]));
 
 // Travelling Salesman Problem
-paths = (a) => {
+const paths = (a) => {
   let roads = 1;
   let num = a;
   for (let i = 1; i <= num; i++) {
@@ -1879,13 +1870,13 @@ console.log(paths(1)); // 1
 console.log(paths(9)); //362880
 
 // Returning an "Add" Function
-add = (x) => (y) => x + y;
+const add = (x) => (y) => x + y;
 console.log(add(10)(20));
 console.log(add(0)(20));
 console.log(add(-30)(80));
 
 // Scrabble Hand
-Scrable = (a) => {
+const Scrable = (a) => {
   let number = 0;
   return a.reduce((first, second) => {
     return first + second.score
@@ -1910,7 +1901,7 @@ console.log(Scrable([
 ]));
 
 // Sort Numbers in Descending Order
-sortDescending = (a) => {
+const sortDescending = (a) => {
   return String(a).split("").sort((item, itemTwo) => itemTwo - item).join("");
 }
 console.log(sortDescending(123));
@@ -1918,7 +1909,7 @@ console.log(sortDescending(1254859723));
 console.log(sortDescending(73065));
 
 // Find the Second Largest Number
-secondLargest = (a) => {
+const secondLargest = (a) => {
   let sorting = a.sort((item, itemTwo) => item - itemTwo);
   return sorting[sorting.length - 2];
 }
@@ -1927,15 +1918,15 @@ console.log(secondLargest([25, 143, 89, 13, 105]));
 console.log(secondLargest([54, 23, 11, 17, 10]));
 
 // Basic Calculator
-calculator = (a, b, c) => {
+const calculatorOne = (a, b, c) => {
  return c !== 0 ? eval(a + b + c) : "Can't divide by 0!";
 }
-console.log(calculator(2, "+", 2));
-console.log(calculator(2, "*", 2));
-console.log(calculator(4, "/", 2));
+console.log(calculatorOne(2, "+", 2));
+console.log(calculatorOne(2, "*", 2));
+console.log(calculatorOne(4, "/", 2));
 
 // Volume of a Cone
-coneVolume = (a, b) => {
+const coneVolume = (a, b) => {
   if(b !== 0) {
     return ((Math.PI * (b ** 2) * a) / 3).toFixed(2);
   }
@@ -1946,7 +1937,7 @@ console.log(coneVolume(15, 6));
 console.log(coneVolume(18, 0));
 
 // Is it an Object?
-isObject = (a) => {
+const isObject = (a) => {
   return a instanceof Object;
 }
 console.log(isObject(function add(x,y) {return x + y}));
@@ -1955,7 +1946,7 @@ console.log(isObject(null));
 console.log(isObject(""));
 
 // Get the Area of a Country
-areaOfCountry = (a, b) => {
+const areaOfCountry = (a, b) => {
   let total = 148940000;
   let percent = (b / total * 100).toFixed(2) + "%";
 
@@ -1966,7 +1957,7 @@ console.log(areaOfCountry("USA", 9372610));
 console.log(areaOfCountry("Iran", 1648195));
 
 // Square Every Digit
-squareDigits = (a) => {
+const squareDigits = (a) => {
   return a.toString().split("").map(item => item ** 2).join("");
 }
 console.log(squareDigits(9119));
@@ -1974,7 +1965,7 @@ console.log(squareDigits(2483));
 console.log(squareDigits(3212));
 
 // Find the Discount
-dis = (a, b) => {
+const dis = (a, b) => {
   return a - (b * a) / 100;
 } 
 console.log(dis(1500, 50));
@@ -1982,7 +1973,7 @@ console.log(dis(89, 20));
 console.log(dis(100, 75));
 
 // Capitalize by ASCII
-asciiCapitalize = (a) => {
+const asciiCapitalize = (a) => {
   let convert = a.split("")
   let check = convert.map(item => item.charCodeAt(0) % 2 === 0 ? item.toUpperCase() : item.toLowerCase()).join("");
   return check;
@@ -1992,7 +1983,7 @@ console.log(asciiCapitalize("THE LITTLE MERMAID"));
 console.log(asciiCapitalize("Oh what a beautiful morning."));
 
 // Is the Number Symmetrical?
-isSymmetrical = (a) => {
+const isSymmetrical = (a) => {
   let text = a.toString().split("");
   let reversing = text.reverse().join("");
   return reversing == a ? true : false;
@@ -2003,7 +1994,7 @@ console.log(isSymmetrical(44444444));
 console.log(isSymmetrical(1112111));
 
 // Phone Number Formatting
-formatPhoneNumber = (a) => {
+const formatPhoneNumber = (a) => {
   let change = a.join("");
   let first = change.slice(0, 3);
   let second = change.slice(2, 5);
