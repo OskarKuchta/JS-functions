@@ -2004,3 +2004,11 @@ const formatPhoneNumber = (a) => {
 console.log(formatPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
 console.log(formatPhoneNumber([5, 1, 9, 5, 5, 5, 4, 4, 6, 8]));
 console.log(formatPhoneNumber([3, 4, 5, 5, 0, 1, 2, 5, 2, 7]));
+
+// Say "Hello" Say "Bye"
+const sayHelloBye = (a, b) => {
+  return b === 1 ? "Hello " + a.charAt(0).toUpperCase() + a.slice(1) : "Bye " + a.charAt(0).toUpperCase() + a.slice(1);
+}
+console.log(sayHelloBye("alon", 1));
+console.log(sayHelloBye("Tomi", 0));
+console.log(sayHelloBye("jose", 0));
