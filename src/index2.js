@@ -23,9 +23,20 @@ console.log(marathonDistance([1, 9, 5, 8, 2]));
 console.log(marathonDistance([-6, 15, 4]));
 
 // Move Capital Letters to the Front
-capToFront = (a) => {
+const capToFront = (a) => {
     return (a.match(/[A-Z]/g) + a.match(/[a-z]/g)).replaceAll(",", "");
 }
 console.log(capToFront("hApPy"));
 console.log(capToFront("moveMENT"));
 console.log(capToFront("shOrtCAKE"));
+
+// Mirror Array
+const mirror = (a) => {
+    let arr = a.slice(0,5);
+    arr = arr.reverse();
+    arr.shift();
+    return a.concat(arr);
+}
+console.log(mirror([0, 2, 4, 6]));
+console.log(mirror([1, 2, 3, 4, 5]));
+console.log(mirror([3, 5, 6, 7, 8]));
