@@ -77,3 +77,12 @@ const indexMultiplier = (a) => {
 }
 console.log(indexMultiplier([1, 2, 3, 4, 5]));
 console.log(indexMultiplier([-3, 0, 8, -6]));
+
+// Currying Functions
+let multiplyFunc = (arr, multi) => {
+   return arr.map((item) => item * multi);
+}
+let multiply = _.curry(multiplyFunc);
+console.log(multiply([1, 2, 3])(2));
+console.log(multiply([4, 6, 5])(10));
+console.log(multiply([1, 2, 3])(0));
