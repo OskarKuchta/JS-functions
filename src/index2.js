@@ -42,7 +42,7 @@ console.log(mirror([1, 2, 3, 4, 5]));
 console.log(mirror([3, 5, 6, 7, 8]));
 
 // Algebra Sequence — Boxes
-boxSeq = (a) => {
+const boxSeq = (a) => {
     let start = 0;
     if(a == 0) {
         return 0;
@@ -64,9 +64,16 @@ console.log(boxSeq(5));
 
 
 // Total Volume of All Boxes
-totalVolume = (...a) => {
+const totalVolume = (...a) => {
     return a.map((item) => item.reduce((item, sum) => item * sum)).reduce((item, sum) => item + sum);
 }
 console.log(totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]));
 console.log(totalVolume([2, 2, 2], [2, 1, 1]));
 console.log(totalVolume([1, 1, 1]));
+
+// Index Multiplier
+const indexMultiplier = (a) => {
+    return a.map((item,index) => item * index).reduce((item, sum) => item + sum);
+}
+console.log(indexMultiplier([1, 2, 3, 4, 5]));
+console.log(indexMultiplier([-3, 0, 8, -6]));
