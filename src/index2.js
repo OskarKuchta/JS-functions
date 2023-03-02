@@ -40,3 +40,24 @@ const mirror = (a) => {
 console.log(mirror([0, 2, 4, 6]));
 console.log(mirror([1, 2, 3, 4, 5]));
 console.log(mirror([3, 5, 6, 7, 8]));
+
+// Algebra Sequence — Boxes
+boxSeq = (a) => {
+    let start = 0;
+    if(a == 0) {
+        return 0;
+    }
+    for(i = 1; i <= a; i++) {
+        if(i % 2 !== 0) {
+            start += 3;
+        }
+        if(i % 2 === 0){
+            start -= 1;
+        }
+    }
+    return start;
+}
+console.log(boxSeq(0));
+console.log(boxSeq(1));
+console.log(boxSeq(2));
+console.log(boxSeq(5));
