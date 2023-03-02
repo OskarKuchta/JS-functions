@@ -61,3 +61,12 @@ console.log(boxSeq(0));
 console.log(boxSeq(1));
 console.log(boxSeq(2));
 console.log(boxSeq(5));
+
+
+// Total Volume of All Boxes
+totalVolume = (...a) => {
+    return a.map((item) => item.reduce((item, sum) => item * sum)).reduce((item, sum) => item + sum);
+}
+console.log(totalVolume([4, 2, 4], [3, 3, 3], [1, 1, 2], [2, 1, 1]));
+console.log(totalVolume([2, 2, 2], [2, 1, 1]));
+console.log(totalVolume([1, 1, 1]));
