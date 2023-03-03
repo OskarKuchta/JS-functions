@@ -141,3 +141,14 @@ hashPlusCount = (a) => {
 console.log(hashPlusCount("###+"));
 console.log(hashPlusCount("##+++#"));
 console.log(hashPlusCount("#+++#+#++#"));
+
+// Calculate the Mean
+mean = (a) => {
+    let sum = a.reduce((item, itemTwo) =>
+        item + itemTwo);
+    let result = sum / a.length;
+    return result.toFixed(2);
+}
+console.log(mean([1, 0, 4, 5, 2, 4, 1,2, 3, 3, 3]));
+console.log(mean([2, 3, 2, 3]));
+console.log(mean([3, 3, 3, 3, 3]));
