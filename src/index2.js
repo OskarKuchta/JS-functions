@@ -129,3 +129,15 @@ societyName = (a) => {
 console.log(societyName(["Adam","Sarah", "Malcolm"]));
 console.log(societyName(["Harry","Newt", "Luna", "Cho"]));
 console.log(societyName(["Phoebe","Chandler", "Rachel", "Ross","Monica", "Joey"]));
+
+// Hashes and Pluses
+hashPlusCount = (a) => {
+    let reg1 = /[#]/g;
+    let reg2 = /[+]/g;
+    return [a.match(reg1).length, a
+        .match(reg2).length
+    ];
+}
+console.log(hashPlusCount("###+"));
+console.log(hashPlusCount("##+++#"));
+console.log(hashPlusCount("#+++#+#++#"));
