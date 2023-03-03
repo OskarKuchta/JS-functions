@@ -89,7 +89,7 @@ console.log(multiply([1, 2, 3])(0));
 
 
 // Reverse the Case
-reverseCase = (a) => {
+const reverseCase = (a) => {
     let result = a.split("").map(
         word => {
             if (word == word.toLowerCase()) {
@@ -105,7 +105,7 @@ console.log(reverseCase("MANY THANKS"));
 console.log(reverseCase("sPoNtAnEoUs"));
 
 // Array Operation
-arrayOperation = (a, b, c) => {
+const arrayOperation = (a, b, c) => {
     let arr = [];
     for (var i = a; i < b; i++) {
         if (i % c === 0) arr.push(i)
@@ -117,7 +117,7 @@ console.log(arrayOperation(7, 9, 2));
 console.log(arrayOperation(15, 20,7));
 
 // Secret Society
-societyName = (a) => {
+const societyName = (a) => {
     let arr = a;
     let result = "";
     select = (item) => {
@@ -131,7 +131,7 @@ console.log(societyName(["Harry","Newt", "Luna", "Cho"]));
 console.log(societyName(["Phoebe","Chandler", "Rachel", "Ross","Monica", "Joey"]));
 
 // Hashes and Pluses
-hashPlusCount = (a) => {
+const hashPlusCount = (a) => {
     let reg1 = /[#]/g;
     let reg2 = /[+]/g;
     return [a.match(reg1).length, a
@@ -143,7 +143,7 @@ console.log(hashPlusCount("##+++#"));
 console.log(hashPlusCount("#+++#+#++#"));
 
 // Calculate the Mean
-mean = (a) => {
+const mean = (a) => {
     let sum = a.reduce((item, itemTwo) =>
         item + itemTwo);
     let result = sum / a.length;
@@ -152,3 +152,13 @@ mean = (a) => {
 console.log(mean([1, 0, 4, 5, 2, 4, 1,2, 3, 3, 3]));
 console.log(mean([2, 3, 2, 3]));
 console.log(mean([3, 3, 3, 3, 3]));
+
+// Transform into an Array with No Duplicates
+const set = (a) => {
+    let sorting = a.sort((item, itemTwo) => item - itemTwo);
+    let result = sorting.filter((item, index) => sorting.indexOf(item) == index);
+    return result;
+}
+console.log(set([1, 3, 3, 5, 5]));
+console.log(set([4, 4, 4, 4]));
+console.log(set([3, 3, 3, 2, 1]));
