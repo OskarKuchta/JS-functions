@@ -103,3 +103,15 @@ reverseCase = (a) => {
 console.log(reverseCase("Happy Birthday"));
 console.log(reverseCase("MANY THANKS"));
 console.log(reverseCase("sPoNtAnEoUs"));
+
+// Array Operation
+arrayOperation = (a, b, c) => {
+    let arr = [];
+    for (var i = a; i < b; i++) {
+        if (i % c === 0) arr.push(i)
+    }
+    return arr;
+}
+console.log(arrayOperation(1, 10,3));
+console.log(arrayOperation(7, 9, 2));
+console.log(arrayOperation(15, 20,7));
