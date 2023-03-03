@@ -86,3 +86,20 @@ let multiply = _.curry(multiplyFunc);
 console.log(multiply([1, 2, 3])(2));
 console.log(multiply([4, 6, 5])(10));
 console.log(multiply([1, 2, 3])(0));
+
+
+// Reverse the Case
+reverseCase = (a) => {
+    let result = a.split("").map(
+        word => {
+            if (word == word.toLowerCase()) {
+                return word.toUpperCase()
+            } else {
+                return word.toLowerCase()
+            }
+        }).join("");
+    return result;
+}
+console.log(reverseCase("Happy Birthday"));
+console.log(reverseCase("MANY THANKS"));
+console.log(reverseCase("sPoNtAnEoUs"));

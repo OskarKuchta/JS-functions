@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "name": "js-functions",
+  "description": "Functions to JavaScript :)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
