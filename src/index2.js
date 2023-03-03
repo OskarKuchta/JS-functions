@@ -115,3 +115,17 @@ arrayOperation = (a, b, c) => {
 console.log(arrayOperation(1, 10,3));
 console.log(arrayOperation(7, 9, 2));
 console.log(arrayOperation(15, 20,7));
+
+// Secret Society
+societyName = (a) => {
+    let arr = a;
+    let result = "";
+    select = (item) => {
+        result += item.charAt(0);
+    }
+    arr.forEach(select);
+    return result;
+}
+console.log(societyName(["Adam","Sarah", "Malcolm"]));
+console.log(societyName(["Harry","Newt", "Luna", "Cho"]));
+console.log(societyName(["Phoebe","Chandler", "Rachel", "Ross","Monica", "Joey"]));
