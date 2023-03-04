@@ -193,4 +193,12 @@ console.log(isValid("853a7"));
 console.log(isValid("732 32"));
 console.log(isValid("393939"));
 console.log(isValid("00000"));
-   
+
+// Convert to Decimal Notation
+const convertToDecimal = (a) => {
+    return a.map((word) => word.replace(
+    /%/g, "") * 0.01);
+}
+console.log(convertToDecimal(["1%","2%", "3%"]));
+console.log(convertToDecimal(["45%","32%", "97%", "33%"]));
+console.log(convertToDecimal(["33%","98.1%", "56.44%","100%"]));
