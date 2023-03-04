@@ -182,5 +182,15 @@ const isSubset = (a, b) => {
 console.log(isSubset([3, 2, 5], [5,3,7, 9, 2]));
 console.log(isSubset([8, 9], [7, 1,9,8, 4, 5, 6]));
 console.log(isSubset([1, 2], [3, 5,9,1]));
-      
+
+// Valid Zip Code
+const isValid = (a) => {
+    return (a.length === 5) ? a.match(
+     /[0-9]/g).length === 5 : false;
+}
+console.log(isValid("59001"));
+console.log(isValid("853a7"));
+console.log(isValid("732 32"));
+console.log(isValid("393939"));
+console.log(isValid("00000"));
    
