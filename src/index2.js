@@ -88,7 +88,6 @@ console.log(multiply([1, 2, 3])(2));
 console.log(multiply([4, 6, 5])(10));
 console.log(multiply([1, 2, 3])(0));
 
-
 // Reverse the Case
 const reverseCase = (a) => {
     let result = a.split("").map(
@@ -163,3 +162,14 @@ const set = (a) => {
 console.log(set([1, 3, 3, 5, 5]));
 console.log(set([4, 4, 4, 4]));
 console.log(set([3, 3, 3, 2, 1]));
+
+// Maximum Possible Total
+const maxTotal = (a) => {
+    return a.sort((item, itemTwo) =>
+     itemTwo - item).slice(0, 5).reduce(
+     (item, sum) => item + sum);
+}
+console.log(maxTotal([1, 1, 0, 1, 3,10, 10, 10, 10,1]));
+console.log(maxTotal([0, 0, 0, 0, 0, 0,0, 0, 0, 100]));
+   console.log(maxTotal([1, 2, 3, 4, 5, 6,7, 8, 9,10]));
+   
