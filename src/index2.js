@@ -171,5 +171,16 @@ const maxTotal = (a) => {
 }
 console.log(maxTotal([1, 1, 0, 1, 3,10, 10, 10, 10,1]));
 console.log(maxTotal([0, 0, 0, 0, 0, 0,0, 0, 0, 100]));
-   console.log(maxTotal([1, 2, 3, 4, 5, 6,7, 8, 9,10]));
+console.log(maxTotal([1, 2, 3, 4, 5, 6,7, 8, 9,10]));
+
+// Is One Array a Subset of Another?
+const isSubset = (a, b) => {
+    let arr = a;
+    let arrTwo = b;
+    return arr.every((item) => arrTwo.includes(item));
+}
+console.log(isSubset([3, 2, 5], [5,3,7, 9, 2]));
+console.log(isSubset([8, 9], [7, 1,9,8, 4, 5, 6]));
+console.log(isSubset([1, 2], [3, 5,9,1]));
+      
    
