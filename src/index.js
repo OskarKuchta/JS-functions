@@ -317,7 +317,7 @@ console.log(makePair(51, 21));
 console.log(makePair(512124, 215));
 
 // Compare Strings by Count of Characters
-comp = (a, b) => {
+const comp = (a, b) => {
   return a.length == b.length ? true :
     false;
 }
@@ -345,10 +345,10 @@ console.log(divisibleByFive(37));
 const bitwiseAND = (a, b) => {
   return a & b;
 }
-bitwiseOR = (a, b) => {
+const bitwiseOR = (a, b) => {
   return a | b;
 }
-bitwiseXOR = (a, b) => {
+const bitwiseXOR = (a, b) => {
   return a ^ b;
 }
 console.log(bitwiseAND(7, 12));
@@ -537,7 +537,7 @@ const intToString = (a) => {
   let convert = a;
   return '"' + a + '"';
 }
-stringToInt = (a) => {
+const stringToInt = (a) => {
   return a;
 }
 console.log(intToString(4));
@@ -749,7 +749,7 @@ console.log(numberSquares(5));
 
 // Sum of Resistance in Series Circuits
 const seriesResistance = (a) => {
-  check = (total, num) => {
+  let check = (total, num) => {
     return total + num;
   }
   let numbers = a;
@@ -832,7 +832,7 @@ let drinks = [
 ];
 let first = drinks[0];
 let second = drinks[1];
-sortByDrinkPrice = (drinks) => {
+const sortByDrinkPrice = (drinks) => {
   if (first.price > second.price) {
     return [second.price, first.price];
   }
@@ -924,7 +924,7 @@ console.log(stringInt("1000"));
 console.log(stringInt("6.7"));
 
 // Area of a Rectangle  
-area = (a, b) => {
+const area = (a, b) => {
   return a > 0 && b > 0 ? a * b : -1;
 }
 console.log(area(3, 4));
@@ -1142,7 +1142,7 @@ console.log(multiSum(8));
 
 // filter Array
 const filterArray = (a) => {
-  checkArray = (item) => {
+  let checkArray = (item) => {
     return Number.isInteger(item);
   }
   let show = a.filter(checkArray);
@@ -1158,7 +1158,7 @@ const sevenBoom = (a) => {
   let arr2 = arr.toString();
   let regex = /7/i;
   let show = arr2.match(regex);
-  checkArray = (item) => {
+  let checkArray = (item) => {
     if (item == 7) {
       return "Boom!";
     }
@@ -1446,23 +1446,6 @@ console.log(countTrue([true, false, false, true, false]));
 console.log(countTrue([false, false, false, false]));
 console.log(countTrue([]));
 
-// A Redundant Function
-const Closures = () => {
-  f1 = () => {
-    return "apple";
-  }
-  f2 = () => {
-    return "pear"
-  }
-  f3 = () => {
-    return " ";
-  }
-}
-Closures();
-console.log(f1());
-console.log(f2());
-console.log(f3());
-
 // RegEx Exercise: An empty string
 const matchReg = () => {
   let str = "";
@@ -1471,7 +1454,7 @@ const matchReg = () => {
 console.log(matchReg());
 
 // Tile Teamwork Tactics
-possibleBonus = (a, b) => {
+const possibleBonus = (a, b) => {
   return (b - a) <= 6 && (b - a) > 0;
 }
 console.log(possibleBonus(3, 7));
@@ -1536,7 +1519,7 @@ console.log(compact([0, 1, false, 2, "", 3]));
 const plusFive = (a) => {
   return a + 5;
 }
-plusTen = (b) => {
+const plusTen = (b) => {
   return b + 10;
 }
 console.log(plusFive(2));
@@ -1562,15 +1545,12 @@ console.log(concatNum([[1], [2], [3], [4], [5], [6], [7]]));
 console.log(concatNum([4, 4, 4, 4, 4]));
 
 // All About Anonymous Functions: Adding Suffixes
-const addText = (a) => {
-  add_ly = (b) => {
-    return b + "ly";
-  }
-  add_less = (c) => {
-    return c + "less";
-  }
+const add_ly = (b) => {
+  return b + "ly";
 }
-addText();
+const add_less = (c) => {
+  return c + "less";
+}
 console.log(add_ly("hopeless"));
 console.log(add_ly("total"));
 console.log(add_less("fear"));
@@ -1643,7 +1623,7 @@ console.log(frontThree("bioshock"));
 
 // Summary Array
 const sumArray = (a) => {
-  let sum = a.reduce(summary = (a, b) => {
+  let sum = a.reduce((a, b) => {
     return a + b
   });
   return sum;
@@ -1758,7 +1738,7 @@ console.log(objectToArray({ D: 1, B: 2, C: 3 }));
 console.log(objectToArray({ likes: 2, dislikes: 3, followers: 10 }));
 
 // Integer in Range?
-intWithinBounds = (a, l, h) => {
+const intWithinBounds = (a, l, h) => {
   if (a * a <= h && a * a >= l) {
     return true;
   }
