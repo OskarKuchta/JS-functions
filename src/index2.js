@@ -202,3 +202,12 @@ const convertToDecimal = (a) => {
 console.log(convertToDecimal(["1%","2%", "3%"]));
 console.log(convertToDecimal(["45%","32%", "97%", "33%"]));
 console.log(convertToDecimal(["33%","98.1%", "56.44%","100%"]));
+
+// Hitting the Jackpot
+const testJackpot = (a) => {
+    return a.every((item) => item === a[
+     0]);
+}
+console.log(testJackpot(["@", "@","@","@"]));
+console.log(testJackpot(["abc","abc","abc", "abc"]));console.log(testJackpot(["&&", "&", "&&&","&&&&"]));
+console.log(testJackpot([1, 1, 1, 1,1]));
