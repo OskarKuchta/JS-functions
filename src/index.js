@@ -1302,13 +1302,6 @@ console.log(calculateDifference({ "baseball bat": 20 }, 5));
 console.log(calculateDifference({ skate: 10, painting: 20 }, 19));
 console.log(calculateDifference({ skate: 200, painting: 200, shoes: 1 }, 400));
 
-// Simple time clock 
-const simpleClock = () => {
-  let data = new Date();
-  document.getElementById("clock").innerHTML = "<b>" + data.toLocaleTimeString() + "</b>";
-}
-setInterval(simpleClock, 1000);
-
 // Is the Average of All Elements a Whole Number?
 const isAvgWhole = (a) => {
   let result = Number.isInteger((a.reduce((item, total) => item + total) / a.length));
