@@ -260,3 +260,12 @@ const numLayers = (a) => {
 console.log(numLayers(1));
 console.log(numLayers(4));
 console.log(numLayers(21));
+
+// Clone an Array
+const clone = (a) => {
+    a.push([...a]);
+    return a;
+}
+console.log(clone([1, 1]));
+console.log(clone([1, 2, 3]));
+console.log(clone(["x", "y"]));
