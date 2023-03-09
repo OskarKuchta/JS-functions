@@ -211,3 +211,19 @@ const testJackpot = (a) => {
 console.log(testJackpot(["@", "@","@","@"]));
 console.log(testJackpot(["abc","abc","abc", "abc"]));console.log(testJackpot(["&&", "&", "&&&","&&&&"]));
 console.log(testJackpot([1, 1, 1, 1,1]));
+
+// A Long Long Time
+longestTime = (a,b,c) => {
+   if(a > b / 60 && a > c / 3600) {
+    return a;
+   }
+   else if(b > a * 60 && b > c / 60){
+    return b;
+   }
+   else {
+    return c;
+   }
+}
+console.log(longestTime(1, 59, 3598));
+console.log(longestTime(2, 300, 15000));
+console.log(longestTime(15, 955, 59400));
