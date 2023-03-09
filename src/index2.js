@@ -227,3 +227,14 @@ longestTime = (a,b,c) => {
 console.log(longestTime(1, 59, 3598));
 console.log(longestTime(2, 300, 15000));
 console.log(longestTime(15, 955, 59400));
+
+// Check if All Values Are True
+allTruthy = (...a) => {
+    let arr = a;
+    return arr.every((element) => {
+        return element == true;
+    });
+}
+console.log(allTruthy(true, true, true));
+console.log(allTruthy(true, false, true));
+console.log(allTruthy(5, 4, 3, 2, 1, 0));
