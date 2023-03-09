@@ -213,7 +213,7 @@ console.log(testJackpot(["abc","abc","abc", "abc"]));console.log(testJackpot(["&
 console.log(testJackpot([1, 1, 1, 1,1]));
 
 // A Long Long Time
-longestTime = (a,b,c) => {
+const longestTime = (a,b,c) => {
    if(a > b / 60 && a > c / 3600) {
     return a;
    }
@@ -229,7 +229,7 @@ console.log(longestTime(2, 300, 15000));
 console.log(longestTime(15, 955, 59400));
 
 // Check if All Values Are True
-allTruthy = (...a) => {
+const allTruthy = (...a) => {
     let arr = a;
     return arr.every((element) => {
         return element == true;
@@ -238,3 +238,13 @@ allTruthy = (...a) => {
 console.log(allTruthy(true, true, true));
 console.log(allTruthy(true, false, true));
 console.log(allTruthy(5, 4, 3, 2, 1, 0));
+
+// Trace That Matrix
+const trace = (a) => {
+    return a.reduce((element,index,array) => 
+    element + index[array], 0)
+}
+console.log(trace([[1, 4],[4, 1]]));
+console.log(trace([[1, 2, 3],[4, 5, 6],[7, 8, 9]
+  ]));
+console.log(trace([[1, 0, 1, 0],[0, 2, 0, 2],[3, 0, 3, 0],[0, 4, 0, 4]]));
