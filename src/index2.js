@@ -248,3 +248,15 @@ console.log(trace([[1, 4],[4, 1]]));
 console.log(trace([[1, 2, 3],[4, 5, 6],[7, 8, 9]
   ]));
 console.log(trace([[1, 0, 1, 0],[0, 2, 0, 2],[3, 0, 3, 0],[0, 4, 0, 4]]));
+
+// Folding a Piece of Paper
+const numLayers = (a) => {
+    let first = 0.0005;
+    for (let i = 1; i <= a; i++) {
+     first *= 2;
+    }
+    return first;
+}
+console.log(numLayers(1));
+console.log(numLayers(4));
+console.log(numLayers(21));
