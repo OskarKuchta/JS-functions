@@ -25,6 +25,7 @@ setNumbers.add(11);
 setNumbers.add(myAge);
 setNumbers.delete(1);
 console.log(setNumbers);
+console.log(setNumbers.has(5));
 
 const mapNumbers = new Map([
    ["first", 1],
@@ -35,3 +36,31 @@ mapNumbers.set("fourth",9);
 console.log(mapNumbers);
 console.log(mapNumbers.get("fourth")); // function work only on keys, not on values
 console.log(mapNumbers.has("first")); 
+
+let x = (new Date().getDay());
+let text;
+switch (x) {
+    case 1: 
+    text = "Today is Monday";
+    break;
+    case 2: 
+    text = "Today is Tuesday";
+    break;
+    case 3: 
+    text = "Today is Wednesday";
+    break;
+    case 4: 
+    text = "Number is Thursday";
+    break;
+    case 5: 
+    text = "Today is Friday";
+    break;
+    case 6: 
+    text = "Today is Saturday";
+    break;
+    case 7: 
+    text = "Today is Sunday"
+    default: 
+    text = "No more days in week, example written for learn default";
+}
+console.log(text);
