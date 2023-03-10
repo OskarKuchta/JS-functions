@@ -13,7 +13,7 @@ promise.then((message) => {
     console.log(message);
 }).catch((message) => {
     console.log(message + " because 2 is smaller than 5");
-});
+}); // Promise will be start with asynch queue
 // let car; Car was declared in second file, name variable was reserved 
 console.log(myAge);
 console.log(person);
@@ -79,3 +79,11 @@ const finalNumber = () => {
     return number;
 }
 console.log(finalNumber()); // 12 + 12 - 10 = 14
+
+const arr = ["a", "b", "c"];
+for(x of arr) {
+    console.log(x); // a, b, c - Return all items in array
+}
+for(x in arr){
+    console.log(x) // 0, 1, 2 - Return array index
+}
