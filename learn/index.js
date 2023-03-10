@@ -1,5 +1,7 @@
 import myAge from "./index2.js"
 import { person, car } from "./index2.js";
+let first = document.getElementById("first");
+
 let promise = new Promise((resolve, reject) => {
     const name = "Oskar";
     if (2 > 5) {
@@ -96,3 +98,6 @@ car.washed = true; // Add next property and value to object
 delete car.type; // Delete property from object
 console.log(car);
 console.log(car.wash());
+
+first.innerHTML = "<b> <u>" + 1234 + "</b> </u>"; // Nesting html tags in JS inner
+first.style.color = "red"; // Add style to html element
