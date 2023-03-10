@@ -64,3 +64,18 @@ switch (x) {
     text = "No more days in week, example written for learn default";
 }
 console.log(text);
+
+const finalNumber = () => {
+    let number = 0;
+    const plus = () => {
+        number += 12;
+    }
+    const minus = () => {
+        number -= 10
+    }
+    plus();
+    plus();
+    minus();
+    return number;
+}
+console.log(finalNumber()); // 12 + 12 - 10 = 14
